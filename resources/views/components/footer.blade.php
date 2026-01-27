@@ -1,6 +1,6 @@
 <footer class="footer bg-brand-beige border-t border-brand-gold/10 py-6 md:py-8 mt-16">
-    <div class="w-[60%] mx-auto">
-        <div class="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8">
+    <div class="w-[93%] md:w-[60%] mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-8">
             <div class="lg:w-1/3">
                 <img
                     src="{{ asset('images/content/DORAALFOLDI-logo-OK-MERGED-allologo-min-min.png') }}"

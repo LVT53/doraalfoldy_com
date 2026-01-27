@@ -87,13 +87,13 @@
 
     <div class="site-container my-10"><div class="divider !my-0"></div></div>
 
-    <section class="w-[97%] mx-auto shadow-xl rounded-[15px] overflow-hidden">
+    <section class="w-[93%] md:w-[97%] mx-auto shadow-xl rounded-[15px] overflow-hidden">
         <x-ui.responsive-image src="/images/content/DSC_4825-min1.jpg" alt="Dekor kép" class="w-full h-auto object-cover" />
     </section>
 
     <div class="site-container my-10"><div class="divider !my-0"></div></div>
 
-    <section class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    <section class="w-[93%] md:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div class="flex items-center gap-4 bg-brand-beige-light p-6 rounded-xl shadow-md border border-brand-gold/5">
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-gold">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 011.94.86l-.85 4.03a1 1 0 01-1.08.79L7.19 7.19a11.03 11.03 0 005.62 5.62l1.61-1.61a1 1 0 011.14-.23l4.03.85a1 1 0 01.86 1.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <section class="w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 items-stretch">
+    <section class="w-[93%] md:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 items-stretch">
         <div class="bg-brand-beige rounded-[15px] overflow-hidden shadow-lg flex flex-col h-full border border-brand-gold/5">
             <x-ui.responsive-image src="/images/content/DSC_14481-scaled.jpg" alt="" class="w-full h-auto object-cover" />
             <div class="p-10 flex-1">
@@ -146,7 +146,7 @@
 
     <div class="site-container my-10"><div class="divider !my-0"></div></div>
 
-    <section class="w-[97%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+    <section class="w-[93%] md:w-[97%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
         <div class="rounded-[15px] overflow-hidden shadow-lg border border-brand-gold/5">
             <x-ui.responsive-image src="/images/content/DSC_52281-790x1183.jpg" alt="" class="w-full h-auto object-cover" />
         </div>

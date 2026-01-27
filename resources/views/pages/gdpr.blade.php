@@ -3,7 +3,7 @@
 @section('title', 'Adatvédelmi tájékoztató | Alföldy Dóra')
 
 @section('page')
-    <x-sections.rich-text title="Adatvédelmi tájékoztató" width="w-[75%]">
+    <x-sections.rich-text title="Adatvédelmi tájékoztató" width="w-[93%] md:w-[75%]">
         <p>Az adatvédelmi tájékoztató a <a href="https://doraalfoldy.com">https://doraalfoldy.com</a> oldalon történő böngészéshez. Adatkezelési irányelvek, adatkezelés módja és ideje, adatkezelők…<br><br>A weboldalak témái: kozmetikai szolgáltatások, szempilla, szemöldök és smink készítése.</p>
         
         <p>1. Az adatkezelő: A weboldal látogatása során az Ön adatainak felelős kezelője Alföldy Dóra Egyéni Vállalkozó. Székhely: 1139 Budapest, Röppentyű utca 25/29. B épület Fsz. 1. Adószám: 57332422-1-41. E-mail cím: <a href="mailto:info@doraalfoldy.com">info@doraalfoldy.com</a>. Telefon. <a href="tel:+36309710393">+36 30 971 0393</a>. Adatvédelmi felelős: Alföldy Gábor</p>

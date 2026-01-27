@@ -48,7 +48,7 @@
         width="w-[75%]"
     />
 
-    <div class="w-[75%] mx-auto"><div class="divider"></div></div>
+    <div class="w-[93%] md:w-[75%] mx-auto"><div class="divider"></div></div>
 
     <x-sections.content-card 
         title="Smink fotózásra"
@@ -62,7 +62,7 @@
         width="w-[75%]"
     />
 
-    <div class="w-[75%] mx-auto"><div class="divider"></div></div>
+    <div class="w-[93%] md:w-[75%] mx-auto"><div class="divider"></div></div>
 
     <x-sections.content-card 
         title="Szalagavató smink"

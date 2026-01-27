@@ -38,14 +38,14 @@
 @keydown.window.escape="closeLightbox()"
 @keydown.window.left="prev()"
 @keydown.window.right="next()"
-class="w-[87%] mx-auto my-12">
+class="site-container my-12">
     
-    <div class="masonry-grid -mx-3">
+    <div class="masonry-grid flex flex-col md:block">
         <!-- Gutter/Column sizer -->
-        <div class="masonry-sizer w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-3"></div>
+        <div class="masonry-sizer hidden md:block w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-0"></div>
 
         @foreach($images as $index => $image)
-            <div class="masonry-item w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 px-3 mb-6">
+            <div class="masonry-item w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 md:px-3 mb-6">
                 <div @click="openLightbox({{ $index }})" 
                      class="rounded-[15px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-pointer border border-brand-gold/5 bg-brand-beige/10">
                     <x-ui.responsive-image 

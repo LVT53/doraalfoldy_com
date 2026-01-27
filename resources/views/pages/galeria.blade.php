@@ -3,11 +3,10 @@
 @section('title', 'Galéria | Alföldy Dóra')
 
 @section('page')
-    {{-- Creative Hero Section --}}
-    <section class="w-[87%] mx-auto my-12 md:my-20">
-        <div class="relative min-h-[60vh] md:min-h-[75vh] flex items-center">
-            {{-- Main Image - Shifted right --}}
-            <div class="absolute right-0 top-0 w-full lg:w-[70%] h-full rounded-[30px] overflow-hidden shadow-2xl border border-brand-gold/10">
+    <section class="site-container my-12 md:my-20">
+        <div class="relative lg:min-h-[75vh] flex flex-col lg:flex-row items-stretch lg:items-center">
+            {{-- Main Image - Top on mobile, Shifted right on desktop --}}
+            <div class="relative lg:absolute lg:right-0 lg:top-0 w-full lg:w-[70%] h-[400px] lg:h-full rounded-[30px] overflow-hidden shadow-2xl border border-brand-gold/10 order-1 lg:order-none">
                 <x-ui.responsive-image
                     src="/images/content/DSC_4635-min.jpg"
                     alt="Galéria"
@@ -15,11 +14,11 @@
                     sizes="(max-width: 1024px) 100vw, 70vw"
                 />
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent to-transparent hidden lg:block"></div>
-                <div class="absolute inset-0 bg-brand-beige-header/40 lg:hidden backdrop-blur-[1px]"></div>
+                <div class="absolute inset-0 bg-brand-beige-header/20 lg:hidden backdrop-blur-[0.5px]"></div>
             </div>
 
-            {{-- Text Content - Floating left --}}
-            <div class="relative z-10 w-full lg:w-[45%] bg-brand-beige-light/95 lg:bg-brand-beige-light p-8 md:p-16 lg:p-20 rounded-[25px] lg:rounded-r-[25px] shadow-2xl lg:shadow-[-20px_0_50px_rgba(0,0,0,0.1)] border border-brand-gold/5">
+            {{-- Text Content - Bottom on mobile, Floating left on desktop --}}
+            <div class="relative z-10 w-full lg:w-[45%] bg-brand-beige-light lg:bg-brand-beige-light p-8 md:p-16 lg:p-20 rounded-[25px] lg:rounded-r-[25px] shadow-2xl lg:shadow-[-20px_0_50px_rgba(0,0,0,0.1)] border border-brand-gold/5 -mt-12 lg:mt-0 order-2 lg:order-none">
                 <div class="inline-flex items-center gap-4 mb-8">
                     <div class="w-16 h-px bg-brand-gold"></div>
                     <span class="text-brand-gold font-bold uppercase text-[10px] md:text-xs tracking-[0.3em]">Galéria Katalógus</span>
@@ -54,10 +53,10 @@
         </div>
     </section>
 
-    <div class="w-[75%] mx-auto my-24"><div class="divider"></div></div>
+    <div class="w-[93%] md:w-[75%] mx-auto my-24"><div class="divider"></div></div>
 
     {{-- Gallery Grid --}}
-    <section class="w-[87%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
+    <section class="site-container grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
         <a href="{{ route('szempilla-galeria') }}" class="group relative h-[500px] md:h-[700px] rounded-[30px] overflow-hidden shadow-xl transition-all duration-700 hover:-translate-y-3">
             <x-ui.responsive-image src="/images/content/IMG_9163-510x616.jpg" alt="Szempilla" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>

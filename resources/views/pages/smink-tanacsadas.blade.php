@@ -44,7 +44,7 @@
         width="w-[75%]"
     />
 
-    <div class="w-[75%] mx-auto my-12"><div class="divider"></div></div>
+    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
     <x-sections.content-card 
         title="Mit tudsz elsajátítani a sminktanácsadás során?"

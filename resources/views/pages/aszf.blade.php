@@ -3,7 +3,7 @@
 @section('title', 'Általános Szerződési Feltételek | Alföldy Dóra')
 
 @section('page')
-    <x-sections.rich-text title="Általános Szerződési Feltételek" width="w-[75%]">
+    <x-sections.rich-text title="Általános Szerződési Feltételek" width="w-[93%] md:w-[75%]">
         <p><strong>https://doraalfoldy.com webáruház és szépségszalon</strong></p>
         
         <h3>1.1 Szolgáltató adatai</h3>

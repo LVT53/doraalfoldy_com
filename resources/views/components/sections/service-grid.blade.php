@@ -2,10 +2,10 @@
     'items' => [],
 ])
 
-<section class="w-[87%] mx-auto my-12">
-    <div id="service-masonry" class="masonry-grid-container -mx-3">
+<section class="site-container my-12">
+    <div id="service-masonry" class="masonry-grid-container -mx-3 flex flex-col md:block">
         <!-- Gutter sizer for spacing -->
-        <div class="masonry-column-item w-full md:w-1/2 lg:w-1/4 px-3 pointer-events-none opacity-0 h-0"></div>
+        <div class="masonry-column-item hidden md:block w-full md:w-1/2 lg:w-1/4 px-3 pointer-events-none opacity-0 h-0"></div>
         
         @foreach($items as $item)
             <div class="masonry-column-item w-full md:w-1/2 lg:w-1/4 px-3 mb-6">

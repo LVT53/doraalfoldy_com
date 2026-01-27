@@ -77,7 +77,7 @@
         />
     </section>
 
-    <div class="w-[75%] mx-auto my-12"><div class="divider"></div></div>
+    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
     <x-sections.content-card 
         title="Szempilla lifting"
@@ -93,6 +93,43 @@
         <strong>Ára:</strong> 12 000 Ft"
         image="/images/content/IMG_4767.jpg"
         reverse="true"
+        width="w-[75%]"
+    />
+
+    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
+
+    <x-sections.salon-info />
+
+    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
+
+    <x-sections.rich-text title="Konzultáció és javaslatok" width="w-[93%] md:w-[75%]">
+        <p>Ahhoz, hogy a hozzád legjobban passzoló szettet készítsem el, szeretnélek megismerni egy kicsit. Ha új vendégként érkezel hozzám, akkor mindig tartunk egy rövid konzultációt. A pár perces konzultáció célja, hogy személyiségedhez, stílusodhoz és igényeidhez legjobban illő szempillákat készítsem el neked. Törepszem arra, hogy a legjobb szettet válasszuk ki számodra, amivel azonosulni tudsz és kényelmes viseletként szolgálhat a hétköznapokban is. Ha még sosem volt műszempillád, akkor arra is szánunk időt, hogy többet tudhass meg róla. Igyekszem olyan környezetet teremteni, ahol kényelmesen érezheted magad, kikapcsolhatsz és lazíthatsz miközben szépülsz. Új, hosszantartó szempilláid érdekében pedig azok megfelelő ápolását is megbeszéljük.</p>
+
+        <p><strong>A szép és tartós műszempilla érdekében több tényezőt is figyelembe kell venni a szempillázás előtt és után is.</strong></p>
+
+        <h3>Kezelés előtt:</h3>
+        <ul>
+            <li>Érdemes a pillázásra smink nélkül érkezni ugyanis az esetleges smink maradványok a szempillán gyengíthetik a ragasztó erősségét, ez által a tartósságot.</li>
+            <li>A pillázást megelőző 1 napban nem ajánlott olajos krémeket, szérumokat használni az arcon ugyanis azok megtapadhatnak a szempillákon, ami kihathat a tartósságra.</li>
+            <li>Tanácsos a hajmosást a pillázás előtti napra időzíteni, mivel 24 óráig nem érheti majd víz, gőz, pára stb a szempilláid.</li>
+            <li>Más szakember munkája után nem vállalok töltést, hiszen mindenki más-más termékekkel dolgozik. Ebben az esetben a régi műszempilla leoldásra kerül és új szett kerül felhelyezésre.</li>
+        </ul>
+
+        <h3>Kezelés után:</h3>
+        <ul>
+            <li>Mint ahogy azt már fentebb említettem az építés után 24 óráig nem érheti víz, gőz, pára a szempilláid, ezen felül nem tanácsos ebben az időintervallumban szaunába vagy szoláriumba menni.</li>
+            <li>Ajánlott minden nap reggel este fésülni a pilláid, a szempillafésűddel, melyet a felhelyezés után kapsz tőlem, ezen felül fontos, hogy rendszeresen mossuk a pillákat szempilla samponnal!</li>
+            <li>Nem szabad dörzsölni a szemet, illetve tépkedni a műszempillákat.</li>
+            <li>Sminkelésnél kerüljük az olajos sminklemosókat, mert oldhatják a ragasztót.</li>
+        </ul>
+    </x-sections.rich-text>
+
+    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
+
+    <x-sections.content-card 
+        title="Töltés"
+        text="Ha valaki elsőre találkozik a műszempillával jogosan merülhet fel benne a kérdés, hogy mi az a töltés és miért van rá szükség. A természetes szempillák folyamatosan cserélődnek ez által a saját szempillával együtt kihullhatnak a műpillák, ami elsőre ijesztő lehet, de ez egy teljesen természetes folyamat. Minden szempilla más-más ütemben nő le. Egy ember szempilla állománya kb 90-120 nap alatt cserélődik ki. Egy hét alatt 3-5 szál saját szempilla hullik ki. Ez által ki lehet számolni, hogy a teljes állomány kb 50-70%-a 3 hét alatt kihullik. A lenőtt pillákat eltávolítjuk, a kihullott pillák helyére pedig újak nőnek ezekre pedig új műpillák kerülnek fel. Ez ezért van szükség a töltésre."
+        image="/images/content/DSC_7854-min.jpg"
         width="w-[75%]"
     />
 

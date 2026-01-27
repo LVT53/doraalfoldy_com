@@ -95,12 +95,12 @@
 
 /* Custom Webflow-like Layout Utilities */
 .site-container {
-    @apply w-full max-w-[87%] mx-auto;
+    @apply w-[93%] md:w-[87%] mx-auto;
 }
 
 @media (min-width: 1024px) {
     .site-container {
-        @apply max-w-[87%];
+        @apply w-[87%];
     }
 }
 
