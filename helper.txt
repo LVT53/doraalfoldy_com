@@ -1,0 +1,33 @@
+1. Document the codebase religiously.
+
+Use the AI to update the documentation every time you complete a change, or do it manually if you can. ALWAYS ensure the documentation is in-sync with development. Always provide that documentation as context to the model when making requests.
+
+The different providers each have their own way of doing this. I've found .md files to be universally effective. Also, Cursor Rules are very powerful for preserving context. On Claude Code, you can keep CLAUDE.md files in critical directories, and Claude will always find them.
+
+I like to always keep a forward looking Known Issues, and Feature Ideas section in my documentation, and keep this up-to-date. For complex features, I have the model write its plan down before doing any code changes.
+
+Use your custom instructions to tell the model exactly how to document your codebase according to your preferences. I've found it helps to use words like "specific", "detailed", "developer-facing" etc.
+
+Anything you find yourself repeating to the model in numerous prompts. Add it to the documentation!
+
+
+
+3. Plan first, code second
+
+It is always tempting to just let the AI do whatever it wants to do from the opening request. But, more often than not, this will cause breaking changes. To mitigate this, I always start in "plan mode" or "architect mode" or whatever the name is for the discussion mode of the provider.
+
+Start by asking questions targeted at getting the AI to understand what you want to accomplish and gather context. Carefully read the plan that it gives you and PUSH BACK against anything that doesn't seem right, or sounds confusing, overengineered, or just plain retarded. This WILL happen and is to be expected.
+
+Keep the back-and-forth going until you agree 100% with the plan, and then approve the execution. Let the model work until it is done.
+
+
+
+4. Code Reviews
+
+Often times, when making many changes, the model will stop before actually getting to the end of the plan but claim it has completed the plan. This is frustrating but it's a limitation of the technology right now.
+
+To mitigate this, I like to tell the model to check its work when its done. When it comes at you with "Excellent, now the feature is 100% implemented! Your codebase is now yada yada yada." Don't blindly believe them.
+
+Say, "Are you sure about that? Check your work for true completion and anything you missed along the way"
+
+It will usually go back and correct itself. Otherwise, you find bugs in the system from incomplete refactors and will be fixing them later when they come up.
