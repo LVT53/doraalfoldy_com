@@ -7,8 +7,8 @@
     <meta name="description" content="@yield('meta_description', 'Alföldy Dóra sminkes, szempilla és szemöldök stylist.')">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('images/content/favicon.png') }}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ asset('images/content/webclip.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/content/favicon.png') }}?v=1" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('images/content/webclip.png') }}?v=1">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('head')
