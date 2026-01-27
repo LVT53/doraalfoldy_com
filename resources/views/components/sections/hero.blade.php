@@ -16,7 +16,7 @@
                     </h1>
                 @endif
                 @if($text)
-                    <p class="header-para text-base md:text-lg">
+                    <p class="header-para font-medium">
                         {{ $text }}
                     </p>
                 @endif
@@ -30,7 +30,7 @@
                     </h2>
                 @endif
                 @if($secondaryText)
-                    <p class="header-para text-base md:text-lg">
+                    <p class="header-para font-medium">
                         {{ $secondaryText }}
                     </p>
                 @endif

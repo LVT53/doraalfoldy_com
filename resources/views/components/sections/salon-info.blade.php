@@ -27,7 +27,7 @@
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         </div>
                         <div>
-                            <p class="text-lg leading-relaxed text-neutral-700 font-medium">
+                            <p class="font-medium">
                                 Barátságos, nyugodt környezetben várlak a 3. kerületben a Remetehegy lábánál, amely könnyen megközelíthető autóval és tömegközlekedéssel egyaránt.
                             </p>
                         </div>
@@ -38,7 +38,7 @@
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
                         <div>
-                            <p class="text-md leading-relaxed text-neutral-600 italic">
+                            <p class="text-neutral-600 italic">
                                 Időpontod foglaló fizetésével tudod rögzíteni. A fizetéshez 15 perces időintervallum tartozik, mivel a kiválasztott időpontot zároljuk a részedre. Foglalásod abban az esetben érvényes, ha az emailben visszaigazolásra került. Amennyiben a lefoglalt időpontot módosítani szeretnéd azt kérlek jelezd felém. Ezt megteheted a honlapon, emailben és telefonon is. Időpont módosításra a lefoglalt időpont előtt 72 órával van lehetőség, amennyiben a foglalási díjat szeretnéd felhasználni a következő időpontra.
                             </p>
                         </div>
@@ -58,7 +58,7 @@
 
                 <div class="relative space-y-8">
                     <div class="group/item">
-                        <span class="text-xs uppercase font-black opacity-60 block mb-2">Helyszín</span>
+                        <span class="text-label !text-white opacity-60 block mb-2">Helyszín</span>
                         <a href="{{ $addressLink }}" target="_blank" class="text-xl md:text-2xl font-serif font-bold hover:text-brand-beige-light transition-colors flex items-start gap-3">
                             <svg class="w-6 h-6 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             {{ $address }}
@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="group/item">
-                        <span class="text-xs uppercase font-black opacity-60 block mb-2">Email</span>
+                        <span class="text-label !text-white opacity-60 block mb-2">Email</span>
                         <a href="mailto:{{ $email }}" class="text-xl md:text-2xl font-serif font-bold hover:text-brand-beige-light transition-colors flex items-start gap-3">
                             <svg class="w-6 h-6 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             {{ $email }}
@@ -74,12 +74,15 @@
                     </div>
 
                     <div class="group/item">
-                        <span class="text-xs uppercase font-black opacity-60 block mb-2">Telefon</span>
+                        <span class="text-label !text-white opacity-60 block mb-2">Telefon</span>
                         <a href="tel:{{ str_replace(' ', '', $phone) }}" class="text-xl md:text-2xl font-serif font-bold hover:text-brand-beige-light transition-colors flex items-start gap-3">
-                            <svg class="w-6 h-6 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <svg class="w-6 h-6 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 011.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                             {{ $phone }}
                         </a>
                     </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

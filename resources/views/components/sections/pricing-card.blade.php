@@ -23,18 +23,18 @@
     @endif
     
     <div class="p-8 md:p-10 lg:p-12 flex flex-col flex-1">
-        <h3 class="text-2xl md:text-3xl font-serif font-bold text-brand-gold mb-6 leading-tight uppercase">{{ $title }}</h3>
+        <h3 class="mb-6 uppercase tracking-tight">{{ $title }}</h3>
         
-        <div class="header-para text-base md:text-lg mb-8 leading-relaxed flex-1 text-neutral-700">
+        <div class="header-para mb-8 flex-1 text-neutral-700">
             {{ $text }}
         </div>
 
         @if(count($features) > 0)
             <div class="mb-8 p-0 border-t border-brand-gold/10 pt-8">
-                <h4 class="text-sm uppercase text-brand-gold font-bold mb-5 tracking-[0.2em]">{{ $featuresTitle }}</h4>
+                <h4 class="text-label mb-5">{{ $featuresTitle }}</h4>
                 <ul class="space-y-4">
                     @foreach($features as $feature)
-                        <li class="flex items-start gap-3 text-base text-neutral-600 leading-relaxed">
+                        <li class="flex items-start gap-3 text-neutral-600 font-medium">
                             <svg class="w-5 h-5 text-brand-gold mt-1 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             {{ $feature }}
                         </li>
@@ -45,7 +45,7 @@
 
         <div class="mt-auto">
             @if($priceDetails)
-                <div class="header-para text-base md:text-lg leading-relaxed whitespace-pre-line text-neutral-700 mb-8 pt-8 border-t border-brand-gold/10">
+                <div class="leading-relaxed whitespace-pre-line text-neutral-600 font-medium mb-8 pt-8 border-t border-brand-gold/10">
                     {!! $priceDetails !!}
                 </div>
             @endif

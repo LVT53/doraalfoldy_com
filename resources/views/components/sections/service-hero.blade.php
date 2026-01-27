@@ -29,14 +29,14 @@
         <div class="relative z-10 w-full lg:w-[45%] bg-brand-beige-light lg:bg-brand-beige-light p-8 md:p-12 lg:p-16 rounded-[25px] lg:rounded-r-[25px] shadow-2xl lg:shadow-[-20px_0_50px_rgba(0,0,0,0.1)] border border-brand-gold/5 -mt-12 lg:mt-0 order-2 lg:order-none">
             <div class="inline-flex items-center gap-4 mb-6">
                 <div class="w-12 h-px bg-brand-gold"></div>
-                <span class="text-brand-gold font-bold uppercase text-[10px] md:text-xs tracking-[0.3em]">{{ $category }}</span>
+                <span class="text-label">{{ $category }}</span>
             </div>
 
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 leading-[0.85] tracking-tighter mb-8">
+            <h1 class="mb-8">
                 {!! $title !!}
             </h1>
 
-            <p class="header-para text-base md:text-lg text-neutral-600 mb-0 leading-relaxed font-medium italic">
+            <p class="header-para text-neutral-600 mb-0 italic font-medium">
                 {{ $text }}
             </p>
         </div>
@@ -46,7 +46,7 @@
         <div class="max-w-4xl mx-auto text-center px-4">
             <div class="inline-flex flex-col items-center">
                 <div class="w-px h-12 bg-brand-gold/30 mb-8"></div>
-                <div class="header-para text-lg md:text-xl leading-relaxed text-neutral-700 italic font-medium">
+                <div class="header-para text-neutral-700 italic font-medium">
                     {!! $secondaryText !!}
                 </div>
             </div>

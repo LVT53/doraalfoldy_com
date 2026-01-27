@@ -31,19 +31,19 @@
             
             <div class="{{ $image ? 'lg:w-[55%]' : 'w-full' }} p-8 md:p-12 lg:p-16 flex flex-col justify-center">
                 @if($title)
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-gold mb-6 leading-tight uppercase">{{ $title }}</h2>
+                    <h2 class="mb-6 uppercase tracking-tight">{{ $title }}</h2>
                 @endif
                 
-                <div class="header-para text-base md:text-lg leading-relaxed mb-8 whitespace-pre-line text-neutral-700">
+                <div class="header-para mb-8 whitespace-pre-line text-neutral-700">
                     {!! $text !!}
                 </div>
 
                 @if(count($features) > 0)
                     <div class="mb-8 p-0 border-t border-brand-gold/10 pt-8">
-                        <h4 class="text-sm uppercase text-brand-gold font-bold mb-5 tracking-[0.2em]">{{ $featuresTitle }}</h4>
+                        <h4 class="text-label mb-5">{{ $featuresTitle }}</h4>
                         <ul class="space-y-4">
                             @foreach($features as $feature)
-                                <li class="flex items-start gap-3 text-base text-neutral-600 leading-relaxed">
+                                <li class="flex items-start gap-3 text-neutral-600 font-medium">
                                     <svg class="w-5 h-5 text-brand-gold mt-1 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                                     {{ $feature }}
                                 </li>
@@ -53,7 +53,7 @@
                 @endif
 
                 @if($priceDetails)
-                    <div class="header-para text-base md:text-lg leading-relaxed whitespace-pre-line text-neutral-700 mb-8 pt-8 border-t border-brand-gold/10">
+                    <div class="header-para whitespace-pre-line text-neutral-700 mb-8 pt-8 border-t border-brand-gold/10 font-medium">
                         {!! $priceDetails !!}
                     </div>
                 @endif

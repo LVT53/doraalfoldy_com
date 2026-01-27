@@ -19,7 +19,7 @@
                         @else
                             <h3 class="text-xl md:text-2xl font-serif font-bold text-neutral-900 mb-6">{{ $item['title'] }}</h3>
                         @endif
-                        <p class="header-para text-base leading-relaxed">
+                        <p class="header-para leading-relaxed">
                             {{ $item['text'] }}
                         </p>
                     @else

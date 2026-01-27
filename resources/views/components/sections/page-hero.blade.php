@@ -22,12 +22,12 @@
         <div class="bg-brand-beige-header/40 p-8 md:p-12 lg:p-16 rounded-[15px] shadow-lg flex items-center border border-brand-gold/5">
             <div class="max-w-xl">
                 @if($title)
-                    <h1 class="mb-6 text-neutral-900 !text-4xl md:!text-5xl leading-tight">
+                    <h1 class="mb-6">
                         {{ $title }}
                     </h1>
                 @endif
                 @if($text)
-                    <div class="header-para !text-lg !leading-relaxed whitespace-pre-line text-neutral-700">
+                    <div class="header-para whitespace-pre-line">
                         {{ $text }}
                     </div>
                 @endif

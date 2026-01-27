@@ -21,14 +21,14 @@
             <div class="relative z-10 w-full lg:w-[45%] bg-brand-beige-light lg:bg-brand-beige-light p-8 md:p-16 lg:p-20 rounded-[25px] lg:rounded-r-[25px] shadow-2xl lg:shadow-[-20px_0_50px_rgba(0,0,0,0.1)] border border-brand-gold/5 -mt-12 lg:mt-0 order-2 lg:order-none">
                 <div class="inline-flex items-center gap-4 mb-8">
                     <div class="w-16 h-px bg-brand-gold"></div>
-                    <span class="text-brand-gold font-bold uppercase text-[10px] md:text-xs tracking-[0.3em]">Galéria Katalógus</span>
+                    <span class="text-label">Galéria Katalógus</span>
                 </div>
 
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 leading-[0.85] tracking-tighter mb-10">
+                <h1 class="mb-10">
                     Munkáim <span class="text-brand-gold">&</span> Stílus
                 </h1>
 
-                <p class="header-para text-lg md:text-xl text-neutral-600 mb-12 max-w-sm leading-relaxed font-medium italic">
+                <p class="header-para text-neutral-600 mb-12 max-w-sm italic font-medium">
                     Fedezd fel a legújabb smink, szempilla és szemöldök munkáimat egy helyen.
                 </p>
 
@@ -46,7 +46,7 @@
                                 <img src="/images/content/image1-510x765.jpeg" class="w-full h-full object-cover" alt="">
                             </div>
                         </div>
-                        <span class="text-neutral-400 text-xs font-bold tracking-[0.2em] uppercase">Stúdió Pillanatok</span>
+                        <span class="text-neutral-400 text-[10px] font-bold tracking-[0.2em] uppercase">Stúdió Pillanatok</span>
                     </div>
                 </div>
             </div>
@@ -61,8 +61,8 @@
             <x-ui.responsive-image src="/images/content/IMG_9163-510x616.jpg" alt="Szempilla" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-brand-gold text-xs font-black tracking-widest uppercase mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
-                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none">Szempilla</p>
+                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
+                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Szempilla</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>
         </a>
@@ -71,8 +71,8 @@
             <x-ui.responsive-image src="/images/content/DSC_47851-510x764.jpg" alt="Smink" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-brand-gold text-xs font-black tracking-widest uppercase mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
-                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none">Smink</p>
+                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
+                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Smink</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>
         </a>
@@ -81,8 +81,8 @@
             <x-ui.responsive-image src="/images/content/image1-510x765.jpeg" alt="Szemöldök" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-brand-gold text-xs font-black tracking-widest uppercase mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
-                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none">Szemöldök</p>
+                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
+                <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Szemöldök</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>
         </a>

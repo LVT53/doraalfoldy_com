@@ -98,19 +98,19 @@
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-gold">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 011.94.86l-.85 4.03a1 1 0 01-1.08.79L7.19 7.19a11.03 11.03 0 005.62 5.62l1.61-1.61a1 1 0 011.14-.23l4.03.85a1 1 0 01.86 1.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
             </div>
-            <a href="tel:+36309710393" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors text-lg">+36 30 971 0393</a>
+            <a href="tel:+36309710393" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors">+36 30 971 0393</a>
         </div>
         <div class="flex items-center gap-4 bg-brand-beige-light p-6 rounded-xl shadow-md border border-brand-gold/5">
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-gold">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
             </div>
-            <a href="mailto:info@doraalfoldy.com" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors text-lg break-all">info@doraalfoldy.com</a>
+            <a href="mailto:info@doraalfoldy.com" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors break-all">info@doraalfoldy.com</a>
         </div>
         <div class="flex items-center gap-4 bg-brand-beige-light p-6 rounded-xl shadow-md border border-brand-gold/5">
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-gold">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
-            <a href="https://goo.gl/maps/SSDm4gxEAREqhcVz5" target="_blank" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors text-lg">1037 Budapest, Hunor utca 56.</a>
+            <a href="https://goo.gl/maps/SSDm4gxEAREqhcVz5" target="_blank" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors">1037 Budapest, Hunor utca 56.</a>
         </div>
     </section>
 
@@ -118,27 +118,39 @@
         <div class="bg-brand-beige rounded-[15px] overflow-hidden shadow-lg flex flex-col h-full border border-brand-gold/5">
             <x-ui.responsive-image src="/images/content/DSC_14481-scaled.jpg" alt="" class="w-full h-auto object-cover" />
             <div class="p-10 flex-1">
-                <h3 class="text-2xl font-bold text-brand-gold mb-6 uppercase">Rugalmas időpont</h3>
-                <p class="text-brand-gold-muted text-lg leading-relaxed">
+                <h3 class="font-bold text-brand-gold mb-6 uppercase">Rugalmas időpont</h3>
+                <p class="text-brand-gold-muted">
                     Jobb felül a foglalásra kattintva könnyen, pár kattintással be tudsz jelentkezni, de ha van bármilyen kérdésed keress bizalommal telefonon is.
+                </p>
+                <p class="text-brand-gold-muted">
+                    Ha pedig menyasszony vagy és az esküvődre szeretnél árajánlatot kérni akkor azt kérlek emailben dátum megjelöléssel és a sminkelendő személyek számával tedd meg. Így gyorsan, személyre szabottan tudok rá ajánlatot küldeni.
                 </p>
             </div>
         </div>
         <div class="bg-brand-beige rounded-[15px] overflow-hidden shadow-lg flex flex-col h-full border border-brand-gold/5">
             <x-ui.responsive-image src="/images/content/IMG_7830-790x1185.jpg" alt="" class="w-full h-auto object-cover" />
             <div class="p-10 flex-1">
-                <h3 class="text-2xl font-bold text-brand-gold mb-6 uppercase">Fizetési módok</h3>
-                <p class="text-brand-gold-muted text-lg leading-relaxed">
+                <h3 class="font-bold text-brand-gold mb-6 uppercase">Fizetési módok</h3>
+                <p class="text-brand-gold-muted">
                     Időpontod foglaló fizetésével tudod rögzíteni. A fizetéshez 15 perces időintervallum tartozik, mivel a kiválasztott időpontot zárolom a részedre.
+                </p>
+                <p class="text-brand-gold-muted">
+                    Foglalásod abban az esetben érvényes, ha az emailben visszaigazolásra került. Amennyiben a lefoglalt időpontot módosítani szeretnéd azt kérlek jelezd felém. Ezt megteheted a honlapon, emailben és telefonon is.
+                </p>
+                <p class="text-brand-gold-muted">
+                    Időpont módosításra a lefoglalt időpont előtt 72 órával van lehetőség, amennyiben a foglalási díjat szeretnéd felhasználni a következő időpontra.
                 </p>
             </div>
         </div>
         <div class="bg-brand-beige rounded-[15px] overflow-hidden shadow-lg flex flex-col h-full border border-brand-gold/5">
             <x-ui.responsive-image src="/images/content/DSC_3073-790x1183.jpg" alt="" class="w-full h-auto object-cover" />
             <div class="p-10 flex-1">
-                <h3 class="text-2xl font-bold text-brand-gold mb-4 uppercase">Kapcsolj ki!</h3>
-                <p class="text-brand-gold-muted text-lg leading-relaxed">
+                <h3 class="font-bold text-brand-gold mb-4 uppercase">Kapcsolj ki!</h3>
+                <p class="text-brand-gold-muted">
                     A szalonban egyszerre csak egy vendég tartózkodik. Nem zavarnak meg a külső zajok, így csak a pihenésre és a szépülésre tudsz koncentrálni.
+                </p>
+                <p class="text-brand-gold-muted">
+                    Barátságos, nyugodt környezetben várlak a 3.kerületben a Remetehegy lábánál, amely könnyen megközelíthető autóval és tömegközlekedéssel egyaránt.
                 </p>
             </div>
         </div>

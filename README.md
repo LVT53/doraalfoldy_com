@@ -77,73 +77,36 @@ In Virtualmin, go to **Server Configuration** > **SSL Certificate** > **Let's En
 ## Post-Deployment Workflow
 
 ### 1. Updating the Site (Git Pull)
-When you push new changes to your repository, follow these steps to update the live server:
+When you push new changes to your repository, you can update the live server with a single command:
 
 1. **SSH into the server** as the virtual server user.
 2. **Navigate to the project directory**:
    ```bash
    cd $HOME/public_html
    ```
-3. **Pull the latest changes**:
+3. **Run the update command**:
    ```bash
-   git pull origin main
-   ```
-4. **Update dependencies and assets** (if necessary):
-   ```bash
-   composer install --optimize-autoloader --no-dev
-   npm install
-   npm run build
-   php artisan migrate --force
-   # Only if new images were added:
-   npm run generate:images
-   ```
-5. **Clear/Re-cache**:
-   ```bash
-   php artisan optimize
+   php artisan update
    ```
 
-### 2. Adding Content
+*Note: This custom command automatically performs `git pull`, updates Composer/NPM dependencies, builds assets, and refreshes the application cache.*
 
-#### Adding New Images
-1. Upload your high-resolution images to `public/images/`.
-2. Run the image generation script on the server:
-   ```bash
-   npm run generate:images
-   ```
-3. The script will create responsive variants in `public/images/variants/` and update `manifest.json`.
+---
 
-#### Adding Blocks to Pages
-Most pages use Blade components located in `resources/views/components/sections/`.
-Example of adding a new content section:
-```html
-<x-sections.content-card 
-    title="New Service"
-    text="Description goes here..."
-    image="/images/my-new-image.jpg"
-/>
-```
+### 3. Customization & Assets
 
-#### Updating Masonry Grids (Gallery)
-Gallery subpages (e.g., `resources/views/pages/szempilla-galeria.blade.php`) use an array of images. To add a new image, simply add a new entry to the `$images` array:
-```php
-$images = [
-    ['src' => '/images/new-gallery-image.jpg', 'alt' => 'Optional alt text'],
-    // ... existing images
-];
-```
+#### Changing the Favicon
+The site uses two primary image files for the favicon and apple touch icon:
+1.  **Standard Favicon:** Replace `public/images/content/favicon.jpg` with your new icon.
+2.  **Apple Touch Icon:** Replace `public/images/content/webclip.jpg` with your new icon.
+*Note: After replacement, you may need to clear your browser cache to see the new icons.*
 
-#### Seasonal Notice Bar
-You can enable a 100% wide blue notice bar at the top of the navbar for seasonal announcements across the entire site.
-1. Open `config/site.php`.
-2. Change the `notice` value:
-```php
-// To show a notice on all pages
-'notice' => 'Szezonális információ: Februárban zárva tartunk!',
-
-// To hide the bar
-'notice' => null,
-```
-3. After changing the config on the server, run `php artisan config:cache` to apply the changes.
+#### Standardized Text Sizes
+The project uses global defaults for typography to ensure visual consistency:
+- **Default (Mobile):** 14px
+- **Default (Desktop):** 16px
+- **Headings:** Defined via `h1`, `h2`, `h3` tags in `app.css`.
+To maintain this, avoid adding manual `text-base`, `text-lg`, etc., classes to paragraph elements unless absolutely necessary for a specific design exception.
 
 ---
 

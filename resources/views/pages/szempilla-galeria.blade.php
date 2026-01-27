@@ -41,10 +41,10 @@
     <section class="site-container pt-12 pb-6 md:pt-16 md:pb-8 text-center">
         <div class="inline-flex items-center gap-3 mb-2">
             <div class="w-8 h-px bg-brand-gold/50"></div>
-            <span class="text-brand-gold font-bold uppercase text-[10px] tracking-[0.3em]">Galéria</span>
+            <span class="text-label">Galéria</span>
             <div class="w-8 h-px bg-brand-gold/50"></div>
         </div>
-        <h1 class="text-3xl md:text-4xl text-neutral-900 font-serif font-bold uppercase tracking-tight">Szempilla</h1>
+        <h1 class="uppercase">Szempilla</h1>
     </section>
 
     <x-sections.masonry-grid :images="$images" />

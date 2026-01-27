@@ -10,5 +10,5 @@ return [
     | navbar on all pages. Set to null to hide the bar.
     |
     */
-    'notice' => "Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám! Köszönöm, hogy benéztél hozzám!",
+    'notice' => null,
 ];
