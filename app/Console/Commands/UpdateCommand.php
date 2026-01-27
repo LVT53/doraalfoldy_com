@@ -26,6 +26,7 @@ class UpdateCommand extends Command
     public function handle()
     {
         $commands = [
+            'Discarding local changes...' => 'git reset --hard',
             'Pulling latest changes from Git...' => 'git pull origin main',
             'Installing Composer dependencies...' => 'composer install --optimize-autoloader --no-dev',
             'Installing NPM dependencies...' => 'npm install',

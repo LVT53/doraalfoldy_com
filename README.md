@@ -97,8 +97,8 @@ When you push new changes to your repository, you can update the live server wit
 
 #### Changing the Favicon
 The site uses two primary image files for the favicon and apple touch icon:
-1.  **Standard Favicon:** Replace `public/images/content/favicon.jpg` with your new icon.
-2.  **Apple Touch Icon:** Replace `public/images/content/webclip.jpg` with your new icon.
+1.  **Standard Favicon:** Replace `public/images/content/favicon.png` with your new icon.
+2.  **Apple Touch Icon:** Replace `public/images/content/webclip.png` with your new icon.
 *Note: After replacement, you may need to clear your browser cache to see the new icons.*
 
 #### Standardized Text Sizes
