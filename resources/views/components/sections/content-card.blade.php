@@ -19,21 +19,21 @@
             @if($image)
                 <div class="lg:w-[45%] flex items-center justify-center p-3 lg:p-0">
                     <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-lg border border-brand-gold/10 lg:rounded-none lg:border-none lg:shadow-none">
-                        <x-ui.responsive-image 
-                            src="{{ $image }}" 
-                            alt="{{ $imageAlt }}" 
-                            class="w-full h-full object-cover min-h-[400px] lg:rounded-2xl lg:border lg:border-brand-gold/10" 
+                        <x-ui.responsive-image
+                            src="{{ $image }}"
+                            alt="{{ $imageAlt }}"
+                            class="w-full h-full object-cover min-h-[400px] lg:rounded-2xl lg:border lg:border-brand-gold/10"
                             :sizes="$sizes"
                         />
                     </div>
                 </div>
             @endif
-            
+
             <div class="{{ $image ? 'lg:w-[55%]' : 'w-full' }} p-8 md:p-12 lg:p-16 flex flex-col justify-center">
                 @if($title)
                     <h2 class="mb-6 uppercase tracking-tight">{{ $title }}</h2>
                 @endif
-                
+
                 <div class="header-para mb-8 whitespace-pre-line text-neutral-700">
                     {!! $text !!}
                 </div>
@@ -53,7 +53,7 @@
                 @endif
 
                 @if($priceDetails)
-                    <div class="header-para whitespace-pre-line text-neutral-700 mb-8 pt-8 border-t border-brand-gold/10 font-medium">
+                    <div class="leading-relaxed whitespace-pre-line text-neutral-600 font-medium mb-8 pt-8 border-t border-brand-gold/10">
                         {!! $priceDetails !!}
                     </div>
                 @endif

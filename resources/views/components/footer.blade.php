@@ -41,7 +41,7 @@
         </div>
 
         <div class="mt-16 pt-8 border-t border-brand-gold/10 flex flex-col md:flex-row justify-between items-center gap-8">
-            <p class="text-neutral-400 text-[13px] font-medium">© {{ date('Y') }} doraalfoldy.com | Minden jog fenntartva. | Made by AlfyDesign</p>
+            <p class="text-neutral-400 text-[13px] font-medium">© {{ date('Y') }} doraalfoldy.com | Minden jog fenntartva. | Designed & coded by AlfyDesign</p>
             <div class="flex space-x-4 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
                 <img src="/images/content/62e4f92fab61355be2059c66_Visa_Inc.-Logo.wine.svg" alt="Visa" class="h-6">
                 <img src="/images/content/62e4f92f5d5e1d7c26c25c06_Mastercard-Logo.wine.svg" alt="Mastercard" class="h-6">
