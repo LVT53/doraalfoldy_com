@@ -1,6 +1,9 @@
 <?php
 
+use App\Livewire\BookingWizard;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/booking', BookingWizard::class)->name('booking');
 
 Route::get('/', function () {
     return view('pages.home');
