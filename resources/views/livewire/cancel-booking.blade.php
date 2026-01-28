@@ -1,12 +1,12 @@
-<div class="container mx-auto px-4 py-8">
+<div class="site-container py-8 md:py-12">
     <div class="max-w-2xl mx-auto">
         <div class="flex justify-end mb-4">
             <x-language-switcher />
         </div>
-        <h1 class="text-3xl font-bold text-center mb-8">{{ __('booking.cancel_appointment') }}</h1>
+        <h1 class="font-serif font-bold text-3xl md:text-4xl text-center mb-8 text-neutral-900">{{ __('booking.cancel_appointment') }}</h1>
 
         @if ($error)
-            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-[15px] mb-6 shadow-lg">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -16,7 +16,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -24,7 +24,7 @@
                 </a>
             </div>
         @elseif ($isCancelled)
-            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-[15px] mb-6 shadow-lg">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -33,10 +33,10 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.cancelled_appointment_details') }}</h2>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-lg text-neutral-900 mb-4">{{ __('booking.cancelled_appointment_details') }}</h2>
                 @if ($appointment)
-                    <div class="space-y-2 text-gray-600">
+                    <div class="space-y-2 text-brand-gold-muted">
                         <p><strong>{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
                         <p><strong>{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
                         <p><strong>{{ __('booking.time') }}:</strong> {{ $appointment->start_time->format('H:i') }}</p>
@@ -46,8 +46,8 @@
             </div>
 
             <div class="text-center">
-                <p class="text-gray-600 mb-4">{{ __('booking.cancellation_email_sent') }}</p>
-                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <p class="text-brand-gold-muted mb-4">{{ __('booking.cancellation_email_sent') }}</p>
+                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -55,9 +55,9 @@
                 </a>
             </div>
         @elseif ($isValid && $appointment)
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.appointment_details') }}</h2>
-                <div class="space-y-2 text-gray-600">
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-lg text-neutral-900 mb-4">{{ __('booking.appointment_details') }}</h2>
+                <div class="space-y-2 text-brand-gold-muted">
                     <p><strong>{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
                     <p><strong>{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
                     <p><strong>{{ __('booking.time') }}:</strong> {{ $appointment->start_time->format('H:i') }}</p>
@@ -67,13 +67,13 @@
             </div>
 
             @if ($canCancel)
-                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+                <div class="bg-yellow-50 border border-yellow-200 rounded-[15px] p-6 mb-6 shadow-lg">
                     <div class="flex items-start gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                         </svg>
                         <div>
-                            <h3 class="font-semibold text-yellow-800 mb-1">{{ __('booking.cancellation_warning') }}</h3>
+                            <h3 class="font-serif font-bold text-yellow-800 mb-1">{{ __('booking.cancellation_warning') }}</h3>
                             <p class="text-yellow-700 text-sm">{{ __('booking.cancellation_irreversible') }}</p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                 <button
                     wire:click="confirmCancel"
                     wire:loading.attr="disabled"
-                    class="w-full py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center gap-2"
+                    class="w-full py-3 bg-red-600 text-white font-semibold rounded-[15px] hover:bg-red-700 transition-colors flex items-center justify-center gap-2 shadow-lg"
                 >
                     <span wire:loading.remove wire:target="confirmCancel">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,13 +99,13 @@
                     </span>
                 </button>
             @else
-                <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                <div class="bg-red-50 border border-red-200 rounded-[15px] p-6 shadow-lg">
                     <div class="flex items-start gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <div>
-                            <h3 class="font-semibold text-red-800 mb-1">{{ __('booking.cancellation_window_closed') }}</h3>
+                            <h3 class="font-serif font-bold text-red-800 mb-1">{{ __('booking.cancellation_window_closed') }}</h3>
                             <p class="text-red-700 text-sm">{{ __('booking.cancellation_window_explanation') }}</p>
                         </div>
                     </div>
