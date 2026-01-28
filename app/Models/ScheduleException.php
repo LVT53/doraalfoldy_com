@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class ScheduleException extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'date',
         'reason',
@@ -25,6 +28,6 @@ class ScheduleException extends Model
 
     public function scopeForDate(Builder $query, string $date): Builder
     {
-        return $query->where('date', $date);
+        return $query->whereDate('date', $date);
     }
 }

@@ -4,11 +4,14 @@ namespace App\Models;
 
 use App\Enums\BookingTokenType;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class BookingToken extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'appointment_id',
         'token',

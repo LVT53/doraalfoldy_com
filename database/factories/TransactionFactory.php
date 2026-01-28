@@ -21,9 +21,8 @@ class TransactionFactory extends Factory
             'payable_id' => 1,
             'amount' => $this->faker->numberBetween(1000, 50000) / 100,
             'status' => 'pending',
-            'transaction_id' => $this->faker->uuid(),
-            'payment_method' => 'barion',
-            'metadata' => [],
+            'payment_id' => $this->faker->uuid(),
+            'barion_status' => 'Prepared',
         ];
     }
 }

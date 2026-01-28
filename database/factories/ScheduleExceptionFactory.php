@@ -17,10 +17,11 @@ class ScheduleExceptionFactory extends Factory
     public function definition(): array
     {
         return [
-            'exception_date' => $this->faker->dateTime(),
-            'start_time' => '09:00:00',
-            'end_time' => '17:00:00',
-            'is_off' => false,
+            'date' => $this->faker->date(),
+            'reason' => $this->faker->sentence(),
+            'is_closed' => false,
+            'custom_start_time' => '09:00:00',
+            'custom_end_time' => '17:00:00',
         ];
     }
 }

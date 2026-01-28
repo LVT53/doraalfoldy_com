@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Enums\AppointmentStatus;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -10,6 +11,8 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 class Appointment extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'service_id',
         'voucher_id',
