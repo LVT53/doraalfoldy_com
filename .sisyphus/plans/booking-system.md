@@ -1097,7 +1097,7 @@ Wave 5 (After Wave 4):
 
 ### Phase 2: Models, Factories & Translations
 
-- [ ] 4. Create Eloquent Models and Enums
+- [x] 4. Create Eloquent Models and Enums
 
   **What to do**:
   

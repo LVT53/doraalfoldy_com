@@ -232,3 +232,11 @@ Verified all 12 booking system tables exist:
 - Voucher validation logic matches Business Rules (lines 446-466 in plan)
 - Ready for factory/seeder creation (Task 5)
 
+
+## Translations (Task 6)
+- Set up Hungarian (hu) and English (en) translations in `lang/`.
+- Created `booking.php` for custom booking UI strings.
+- Created `emails.php` for email content.
+- Standard Laravel files (`auth.php`, `pagination.php`, `validation.php`) were also added for both languages.
+- Hungarian validation attributes include specific booking-related fields like `service_id`, `voucher_code`, etc.
+- Verified translation retrieval using `App::setLocale()` and `__()` helper in Tinker.
