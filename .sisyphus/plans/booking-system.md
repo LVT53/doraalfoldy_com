@@ -185,11 +185,11 @@ ToggleColumn::make('is_active'),
 ```
 
 **Acceptance Criteria**:
-- [ ] Visit `http://doraalfoldy_com.test/admin/service-categories` → list page loads
-- [ ] Create category "Szempilla" → saved to DB
-- [ ] Visit `http://doraalfoldy_com.test/admin/services` → list page loads
-- [ ] Create service with category → saved with correct category_id
-- [ ] Toggle is_active in table → updates DB immediately
+- [x] Visit `http://doraalfoldy_com.test/admin/service-categories` → list page loads
+- [x] Create category "Szempilla" → saved to DB
+- [x] Visit `http://doraalfoldy_com.test/admin/services` → list page loads
+- [x] Create service with category → saved with correct category_id
+- [x] Toggle is_active in table → updates DB immediately
 
 ---
 
@@ -254,11 +254,11 @@ TimePicker::make('custom_end_time')->visible(fn($get) => !$get('is_closed')),
 ```
 
 **Acceptance Criteria**:
-- [ ] Visit `http://doraalfoldy_com.test/admin/appointments` → list loads
-- [ ] Appointment status badge shows correct colors
-- [ ] Schedule end_time validation rejects end <= start
-- [ ] ScheduleException custom hours fields only show when is_closed=false
-- [ ] Filter appointments by status works
+- [x] Visit `http://doraalfoldy_com.test/admin/appointments` → list loads
+- [x] Appointment status badge shows correct colors
+- [x] Schedule end_time validation rejects end <= start
+- [x] ScheduleException custom hours fields only show when is_closed=false
+- [x] Filter appointments by status works
 
 ---
 
@@ -356,13 +356,13 @@ ls -la public/storage
 - Accessible via URL: `http://doraalfoldy_com.test/storage/photos/filename.jpg`
 
 **Acceptance Criteria**:
-- [ ] Voucher code auto-generate button works
-- [ ] Voucher balance field only shows for gift_card type
-- [ ] Review bulk approve updates all selected
-- [ ] `php artisan storage:link` executed (symlink exists)
-- [ ] Photo upload stores in `storage/app/public/photos/`
-- [ ] Photo accessible via URL: `/storage/photos/{filename}`
-- [ ] Photo thumbnail displays in table (via `ImageColumn::make('image_path')->disk('public')`)
+- [x] Voucher code auto-generate button works
+- [x] Voucher balance field only shows for gift_card type
+- [x] Review bulk approve updates all selected
+- [x] `php artisan storage:link` executed (symlink exists)
+- [x] Photo upload stores in `storage/app/public/photos/`
+- [x] Photo accessible via URL: `/storage/photos/{filename}`
+- [x] Photo thumbnail displays in table (via `ImageColumn::make('image_path')->disk('public')`)
 
 ---
 
@@ -423,10 +423,10 @@ class Settings extends Page
 **EmployeeProfileResource**: Single record edit page that loads `EmployeeProfile::firstOrCreate([])`.
 
 **Acceptance Criteria**:
-- [ ] Visit `http://doraalfoldy_com.test/admin/settings` → page loads with current values
-- [ ] Change cancellation_hours to 48, save → Setting::get('cancellation_hours') returns '48'
-- [ ] Employee profile page loads single record
-- [ ] Employee image upload works
+- [x] Visit `http://doraalfoldy_com.test/admin/settings` → page loads with current values
+- [x] Change cancellation_hours to 48, save → Setting::get('cancellation_hours') returns '48'
+- [x] Employee profile page loads single record
+- [x] Employee image upload works
 
 ---
 
@@ -480,11 +480,11 @@ while ($current->copy()->addMinutes($service->duration_minutes)->lte($workEnd)) 
 - If 10:10 booked: appointment.end_time = 11:10 (no buffer in DB)
 
 **Acceptance Criteria**:
-- [ ] `getAvailableSlots()` respects Schedule working hours
-- [ ] `getAvailableSlots()` excludes slots with existing PENDING/CONFIRMED appointments
-- [ ] `getAvailableSlots()` respects buffer time
-- [ ] `getAvailableSlots()` returns empty for closed days (is_off or exception is_closed)
-- [ ] `reserveSlot()` with locking prevents double-booking (sequential test)
+- [x] `getAvailableSlots()` respects Schedule working hours
+- [x] `getAvailableSlots()` excludes slots with existing PENDING/CONFIRMED appointments
+- [x] `getAvailableSlots()` respects buffer time
+- [x] `getAvailableSlots()` returns empty for closed days (is_off or exception is_closed)
+- [x] `reserveSlot()` with locking prevents double-booking (sequential test)
 
 ---
 
@@ -666,15 +666,15 @@ public function initiatePayment(): void
 ```
 
 **Acceptance Criteria**:
-- [ ] Visit `http://doraalfoldy_com.test/booking` → Step 1 loads with services
-- [ ] Select service → moves to Step 2
-- [ ] Select date with slots → moves to Step 3
-- [ ] Select time → moves to Step 4
-- [ ] Apply valid voucher → discount calculated correctly
-- [ ] Apply invalid voucher → error shown
-- [ ] Fill form without terms → cannot proceed
-- [ ] Fill form with terms → moves to Step 5
-- [ ] Mobile responsive (test at 375px width)
+- [x] Visit `http://doraalfoldy_com.test/booking` → Step 1 loads with services
+- [x] Select service → moves to Step 2
+- [x] Select date with slots → moves to Step 3
+- [x] Select time → moves to Step 4
+- [x] Apply valid voucher → discount calculated correctly
+- [x] Apply invalid voucher → error shown
+- [x] Fill form without terms → cannot proceed
+- [x] Fill form with terms → moves to Step 5
+- [x] Mobile responsive (test at 375px width)
 
 ---
 
@@ -1030,14 +1030,14 @@ Route::get('/booking/payment/status/{appointment}', [BookingController::class, '
 **Result**: Customer always sees appropriate state - immediate success/failure if webhook was fast, or a "processing" spinner that polls until webhook arrives.
 
 **Acceptance Criteria**:
-- [ ] `createPayment()` returns valid Barion URL (mock HTTP in test)
-- [ ] Transaction record created with PENDING status
-- [ ] Webhook updates transaction and appointment status
-- [ ] Webhook is idempotent (calling twice doesn't double-process)
-- [ ] Success page shows confirmation when webhook completed
-- [ ] Failed page shows error and retry option
-- [ ] Processing page shows spinner and polls `/booking/payment/status/{id}`
-- [ ] Poll redirects to success/failed when status changes
+- [x] `createPayment()` returns valid Barion URL (mock HTTP in test)
+- [x] Transaction record created with PENDING status
+- [x] Webhook updates transaction and appointment status
+- [x] Webhook is idempotent (calling twice doesn't double-process)
+- [x] Success page shows confirmation when webhook completed
+- [x] Failed page shows error and retry option
+- [x] Processing page shows spinner and polls `/booking/payment/status/{id}`
+- [x] Poll redirects to success/failed when status changes
 
 ---
 
@@ -1083,11 +1083,11 @@ Appointment::where('status', AppointmentStatus::CONFIRMED)
 **Reminder Tracking**: Uses `appointments.reminder_sent_at` column (added in schema). When NULL = not sent. Set to timestamp when reminder is sent. This prevents duplicate reminders without adding complexity to the booking token system.
 
 **Acceptance Criteria**:
-- [ ] BookingConfirmation includes cancel and reschedule URLs
-- [ ] All emails implement ShouldQueue
-- [ ] AppointmentReminder command finds appointments due in X hours
-- [ ] ReviewRequest only sent to COMPLETED appointments
-- [ ] CancelStale command updates PENDING >30min to CANCELLED
+- [x] BookingConfirmation includes cancel and reschedule URLs
+- [x] All emails implement ShouldQueue
+- [x] AppointmentReminder command finds appointments due in X hours
+- [x] ReviewRequest only sent to COMPLETED appointments
+- [x] CancelStale command updates PENDING >30min to CANCELLED
 
 ---
 
@@ -1233,13 +1233,13 @@ private function createMagicTokens(Appointment $appointment): void
 ```
 
 **Acceptance Criteria**:
-- [ ] Invalid token shows error message
-- [ ] Expired token shows expiry error
-- [ ] Used token shows "already used" error
-- [ ] Cancel within window → appointment cancelled, email sent
-- [ ] Cancel outside window → error with hours remaining
-- [ ] Reschedule updates times and creates new tokens
-- [ ] Review creates unapproved Review record
+- [x] Invalid token shows error message
+- [x] Expired token shows expiry error
+- [x] Used token shows "already used" error
+- [x] Cancel within window → appointment cancelled, email sent
+- [x] Cancel outside window → error with hours remaining
+- [x] Reschedule updates times and creates new tokens
+- [x] Review creates unapproved Review record
 
 ---
 
@@ -1298,10 +1298,10 @@ Route::middleware('booking')->group(function () {
 ```
 
 **Acceptance Criteria**:
-- [ ] Visit `/booking?lang=en` → session has locale=en
-- [ ] Visit `/booking` again → still English
-- [ ] Click HU → switches to Hungarian
-- [ ] Booking UI shows translated text
+- [x] Visit `/booking?lang=en` → session has locale=en
+- [x] Visit `/booking` again → still English
+- [x] Click HU → switches to Hungarian
+- [x] Booking UI shows translated text
 
 ---
 
