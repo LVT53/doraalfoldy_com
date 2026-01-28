@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/content/webclip.png') }}?v=1">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
     @stack('head')
 </head>
 <body class="body antialiased">
@@ -36,6 +37,7 @@
     </a>
 
     @stack('scripts')
+    @livewireScripts
     <script>
         (function () {
             const btn = document.querySelector('[data-back-to-top]');
