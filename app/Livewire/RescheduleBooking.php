@@ -122,6 +122,17 @@ class RescheduleBooking extends Component
             return;
         }
 
+        // Check cancellation window
+        $cancellationHours = (int) \App\Models\Setting::get('cancellation_hours', 24);
+        if ($cancellationHours > 0) {
+            $deadline = $this->appointment->start_time->subHours($cancellationHours);
+            if (now() > $deadline) {
+                $this->error = __('booking.reschedule_not_allowed');
+
+                return;
+            }
+        }
+
         $newStartTime = Carbon::parse("{$this->selectedDate} {$this->selectedTime}");
 
         if (! $slotService->isSlotAvailable($service, $newStartTime)) {

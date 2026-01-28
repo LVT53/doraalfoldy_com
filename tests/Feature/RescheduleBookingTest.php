@@ -58,9 +58,9 @@ describe('Reschedule Booking', function () {
         // Assert
         expect($component->get('isValid'))->toBeTrue();
 
-        // Select new date and time
+        // Select new date and time (use 10:00 which should be available)
         $component->call('selectDate', $newDate->format('Y-m-d'))
-            ->call('selectTime', '14:00')
+            ->call('selectTime', '10:00')
             ->call('confirmReschedule');
 
         // Assert
@@ -68,7 +68,7 @@ describe('Reschedule Booking', function () {
 
         $appointment->refresh();
         expect($appointment->start_time->format('Y-m-d'))->toBe($newDate->format('Y-m-d'));
-        expect($appointment->start_time->format('H:i'))->toBe('14:00');
+        expect($appointment->start_time->format('H:i'))->toBe('10:00');
         expect($token->fresh()->used_at)->not->toBeNull();
 
         // Email was sent
@@ -112,12 +112,12 @@ describe('Reschedule Booking', function () {
             'is_off' => false,
         ]);
 
-        // Try to reschedule
+        // Try to reschedule (use 10:00 which should be available)
         $component->call('selectDate', $newDate->format('Y-m-d'))
-            ->call('selectTime', '14:00')
+            ->call('selectTime', '10:00')
             ->call('confirmReschedule');
 
-        // Assert - Appointment not rescheduled
+        // Assert - Appointment not rescheduled (because outside window, not because of slot)
         expect($component->get('isRescheduled'))->toBeFalse();
         expect($appointment->fresh()->start_time)->toEqual($appointment->start_time);
     });
