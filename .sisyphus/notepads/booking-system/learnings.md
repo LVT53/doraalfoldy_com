@@ -140,3 +140,95 @@ Verified all 12 booking system tables exist:
 ✅ Panel loads at `http://doraalfoldy_com.test/admin/login`
 ✅ Commit created
 
+
+## [2026-01-28T22:15:00Z] Task 4: Eloquent Models and Enums Created
+
+### What Was Done
+1. Created 4 enum files in `app/Enums/`:
+   - `AppointmentStatus.php` - 5 cases: pending, confirmed, cancelled, completed, no_show
+   - `VoucherType.php` - 3 cases: percentage, fixed, gift_card (with business logic comments)
+   - `TransactionStatus.php` - 4 cases: pending, completed, failed, refunded
+   - `BookingTokenType.php` - 3 cases: cancel, reschedule, review
+
+2. Created 12 model files in `app/Models/`:
+   - `ServiceCategory.php` - hasMany services, hasMany referencePhotos
+   - `Service.php` - belongsTo category, hasMany appointments
+   - `Schedule.php` - scopeForDay() for day queries
+   - `ScheduleException.php` - scopeForDate() for date queries
+   - `EmployeeProfile.php` - static profile() singleton accessor
+   - `Appointment.php` - belongsTo service, belongsTo voucher (nullable), hasMany tokens, morphOne transaction
+   - `Voucher.php` - scopeValid() for finding valid vouchers, hasBalance(), isUsed() helpers
+   - `Transaction.php` - morphTo payable
+   - `Review.php` - belongsTo appointment (nullable)
+   - `ReferencePhoto.php` - belongsTo category
+   - `Setting.php` - static get()/set() with encryption for barion_pos_key
+   - `BookingToken.php` - belongsTo appointment, scopeValid()
+
+3. All models use:
+   - `casts()` method (not $casts property) per Laravel 12 conventions
+   - Explicit return type declarations on all methods
+   - Proper fillable arrays for mass assignment
+   - Enum casting for status/type fields
+
+4. Verified functionality via tinker:
+   - Models instantiate correctly
+   - `Voucher::valid('CODE')->first()` scope works
+   - `Setting::get('key')` / `Setting::set('key', 'val')` work
+   - `Setting` encryption works for barion_pos_key
+   - `EmployeeProfile::profile()` singleton accessor works
+
+5. Ran Pint formatter: all code passes
+
+### Key Implementation Details
+
+#### Voucher Model
+- `scopeValid()` implements complex business logic:
+  - Checks expiration (expires_at IS NULL OR > now())
+  - For percentage/fixed: checks used_at IS NULL
+  - For gift_card: checks balance > 0
+- Helper methods: `hasBalance()`, `isUsed()`
+
+#### Setting Model
+- Static `get()` and `set()` methods for key-value access
+- Automatic encryption/decryption for sensitive keys (barion_pos_key)
+- Uses `updateOrCreate()` for upsert behavior
+
+#### Appointment Model
+- Casts status to AppointmentStatus enum
+- All monetary fields cast to decimal:2
+- Datetime fields: start_time, end_time, reminder_sent_at
+- Relationships: service, voucher (nullable), tokens, transaction (morphOne)
+
+#### BookingToken Model
+- `scopeValid()` checks: used_at IS NULL AND expires_at > now()
+- Casts type to BookingTokenType enum
+
+#### EmployeeProfile Model
+- Static `profile()` method returns first record (singleton pattern)
+- No relationships (standalone profile)
+
+### Files Created
+- `app/Enums/AppointmentStatus.php`
+- `app/Enums/VoucherType.php`
+- `app/Enums/TransactionStatus.php`
+- `app/Enums/BookingTokenType.php`
+- `app/Models/ServiceCategory.php`
+- `app/Models/Service.php`
+- `app/Models/Schedule.php`
+- `app/Models/ScheduleException.php`
+- `app/Models/EmployeeProfile.php`
+- `app/Models/Appointment.php`
+- `app/Models/Voucher.php`
+- `app/Models/Transaction.php`
+- `app/Models/Review.php`
+- `app/Models/ReferencePhoto.php`
+- `app/Models/Setting.php`
+- `app/Models/BookingToken.php`
+
+### Notes
+- All enum and model definitions match plan specification exactly
+- Used Laravel 12 conventions: casts() method, not $casts property
+- Setting model encryption uses Laravel's Crypt facade
+- Voucher validation logic matches Business Rules (lines 446-466 in plan)
+- Ready for factory/seeder creation (Task 5)
+
