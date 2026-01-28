@@ -1,14 +1,16 @@
-<div class="flex items-center gap-2 text-sm">
+<div class="flex items-center gap-1 bg-white/80 backdrop-blur-sm rounded-full px-2 py-1 shadow-sm border border-gray-200/50">
     <a
-        href="{{ request()->fullUrlWithQuery(['lang' => 'hu']) }}"
-        class="px-2 py-1 rounded transition-colors {{ app()->getLocale() === 'hu' ? 'font-bold text-brand-gold' : 'text-gray-600 hover:text-brand-gold' }}"
+        href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['lang' => 'hu'])) }}"
+        wire:navigate
+        class="px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 {{ app()->getLocale() === 'hu' ? 'bg-brand-gold text-white shadow-md' : 'text-gray-600 hover:text-brand-gold hover:bg-brand-gold/10' }}"
     >
         HU
     </a>
-    <span class="text-gray-400">|</span>
+    <span class="text-gray-300">|</span>
     <a
-        href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}"
-        class="px-2 py-1 rounded transition-colors {{ app()->getLocale() === 'en' ? 'font-bold text-brand-gold' : 'text-gray-600 hover:text-brand-gold' }}"
+        href="{{ route(Route::currentRouteName(), array_merge(request()->route()->parameters(), ['lang' => 'en'])) }}"
+        wire:navigate
+        class="px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 {{ app()->getLocale() === 'en' ? 'bg-brand-gold text-white shadow-md' : 'text-gray-600 hover:text-brand-gold hover:bg-brand-gold/10' }}"
     >
         EN
     </a>
