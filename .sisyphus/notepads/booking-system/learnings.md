@@ -240,3 +240,80 @@ Verified all 12 booking system tables exist:
 - Standard Laravel files (`auth.php`, `pagination.php`, `validation.php`) were also added for both languages.
 - Hungarian validation attributes include specific booking-related fields like `service_id`, `voucher_code`, etc.
 - Verified translation retrieval using `App::setLocale()` and `__()` helper in Tinker.
+
+## [2026-01-28T22:30:00Z] Task 5: Factories and Seeders Created
+
+### What Was Done
+1. Created 12 factories in `database/factories/`:
+   - ServiceCategoryFactory, ServiceFactory, ScheduleFactory, ScheduleExceptionFactory
+   - EmployeeProfileFactory, AppointmentFactory, VoucherFactory, TransactionFactory
+   - ReviewFactory, ReferencePhotoFactory, SettingFactory, BookingTokenFactory
+
+2. Created 4 seeders in `database/seeders/`:
+   - ServiceCategorySeeder: 3 categories (Szempilla, Smink, Szemöldök)
+   - ScheduleSeeder: 7 schedules (Mon-Fri 9-17, Sat 9-14, Sun off)
+   - SettingSeeder: 9 settings (cancellation_hours, reminder_hours, default_buffer_minutes, site_name, admin_email, booking_terms, barion_pos_key, barion_sandbox, slot_lock)
+   - EmployeeProfileSeeder: 1 employee (Dóra Álfoldy)
+
+3. Registered seeders in DatabaseSeeder via $this->call()
+
+4. Ran `php artisan migrate:fresh --seed` successfully
+
+### Key Implementation Details
+
+#### Factory Patterns
+- ServiceFactory: Creates with random category via factory()
+- AppointmentFactory: Creates with Service factory, calculates end_time from duration
+- VoucherFactory: Uses unique bothify() for code generation
+- ReviewFactory: Creates with Appointment factory
+- ReferencePhotoFactory: Creates with ServiceCategory factory
+- BookingTokenFactory: Creates with Appointment factory, uses sha256() for token
+
+#### Seeder Patterns
+- ServiceCategorySeeder: Direct create() calls with hardcoded Hungarian names
+- ScheduleSeeder: Loop for Mon-Fri (0-4), separate Sat (5), separate Sun (6) with is_off=true
+- SettingSeeder: Uses Setting::set() static method for all 9 keys
+- EmployeeProfileSeeder: Single create() call with Dóra Álfoldy
+
+#### Important Discovery
+- EmployeeProfile migration has: id, name, bio, image_path, instagram_url, timestamps
+- Does NOT have email/phone columns (unlike initial assumption)
+- Updated factory and seeder to match actual migration schema
+
+### Verification Results
+✅ `php artisan migrate:fresh --seed` runs without errors
+✅ ServiceCategory count: 3
+✅ Schedule count: 7
+✅ Setting count: 9 (including slot_lock)
+✅ EmployeeProfile count: 1
+✅ slot_lock setting value: "lock_row" (critical for advisory locking)
+✅ Pint formatter: pass
+✅ Commit: `feat(database): add factories and seeders`
+
+### Files Created
+- database/factories/ServiceCategoryFactory.php
+- database/factories/ServiceFactory.php
+- database/factories/ScheduleFactory.php
+- database/factories/ScheduleExceptionFactory.php
+- database/factories/EmployeeProfileFactory.php
+- database/factories/AppointmentFactory.php
+- database/factories/VoucherFactory.php
+- database/factories/TransactionFactory.php
+- database/factories/ReviewFactory.php
+- database/factories/ReferencePhotoFactory.php
+- database/factories/SettingFactory.php
+- database/factories/BookingTokenFactory.php
+- database/seeders/ServiceCategorySeeder.php
+- database/seeders/ScheduleSeeder.php
+- database/seeders/SettingSeeder.php
+- database/seeders/EmployeeProfileSeeder.php
+
+### Files Modified
+- database/seeders/DatabaseSeeder.php - Added $this->call() for 4 seeders
+
+### Notes
+- All factories follow Laravel conventions with proper relationships
+- Seeders use direct model creation for deterministic data
+- slot_lock setting is CRITICAL for slot reservation locking strategy
+- Ready for Task 6 (Hungarian Translations)
+
