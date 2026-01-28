@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'select_service' => 'Select Service',
+    'service_details' => 'Service Details',
+    'duration' => 'Duration',
+    'price' => 'Price',
+    'select_date' => 'Select Date',
+    'select_time' => 'Select Time',
+    'no_slots_available' => 'No slots available on this day.',
+    'your_name' => 'Your Name',
+    'your_email' => 'Your Email',
+    'your_phone' => 'Your Phone',
+    'notes' => 'Notes',
+    'apply_voucher' => 'Apply Voucher',
+    'voucher_code' => 'Voucher Code',
+    'discount_applied' => 'Discount Applied',
+    'pay_deposit' => 'Pay Deposit',
+    'total_price' => 'Total Price',
+    'deposit_amount' => 'Deposit Amount',
+    'remaining_amount' => 'Remaining Amount',
+    'booking_confirmed' => 'Booking Confirmed',
+    'appointment_details' => 'Appointment Details',
+    'slot_taken' => 'Sorry, this slot has been taken in the meantime.',
+    'invalid_voucher' => 'Invalid voucher code.',
+    'payment_failed' => 'Payment failed.',
+];

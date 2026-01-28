@@ -1,0 +1,52 @@
+<?php
+
+return [
+    'accepted' => 'A(z) :attribute el kell legyen fogadva.',
+    'active_url' => 'A(z) :attribute nem érvényes URL.',
+    'after' => 'A(z) :attribute dátumnak :date utáninak kell lennie.',
+    'alpha' => 'A(z) :attribute csak betűket tartalmazhat.',
+    'alpha_dash' => 'A(z) :attribute csak betűket, számokat, kötőjeleket és aláhúzásokat tartalmazhat.',
+    'alpha_num' => 'A(z) :attribute csak betűket és számokat tartalmazhat.',
+    'array' => 'A(z) :attribute tömb kell, hogy legyen.',
+    'before' => 'A(z) :attribute dátumnak :date előttinek kell lennie.',
+    'between' => [
+        'numeric' => 'A(z) :attribute :min és :max között kell, hogy legyen.',
+        'file' => 'A(z) :attribute mérete :min és :max kilobájt között kell, hogy legyen.',
+        'string' => 'A(z) :attribute hossza :min és :max karakter között kell, hogy legyen.',
+        'array' => 'A(z) :attribute :min és :max elem között kell, hogy legyen.',
+    ],
+    'boolean' => 'A(z) :attribute mezőnek igaznak vagy hamisnak kell lennie.',
+    'confirmed' => 'A(z) :attribute megerősítése nem egyezik.',
+    'date' => 'A(z) :attribute nem érvényes dátum.',
+    'email' => 'A(z) :attribute érvényes e-mail cím kell, hogy legyen.',
+    'exists' => 'A kiválasztott :attribute érvénytelen.',
+    'image' => 'A(z) :attribute kép kell, hogy legyen.',
+    'integer' => 'A(z) :attribute számnak kell lennie.',
+    'max' => [
+        'numeric' => 'A(z) :attribute nem lehet nagyobb, mint :max.',
+        'file' => 'A(z) :attribute nem lehet nagyobb, mint :max kilobájt.',
+        'string' => 'A(z) :attribute nem lehet hosszabb, mint :max karakter.',
+        'array' => 'A(z) :attribute nem tartalmazhat több mint :max elemet.',
+    ],
+    'min' => [
+        'numeric' => 'A(z) :attribute legalább :min kell, hogy legyen.',
+        'file' => 'A(z) :attribute legalább :min kilobájt kell, hogy legyen.',
+        'string' => 'A(z) :attribute legalább :min karakter kell, hogy legyen.',
+        'array' => 'A(z) :attribute legalább :min elemet kell, hogy tartalmazzon.',
+    ],
+    'numeric' => 'A(z) :attribute számnak kell lennie.',
+    'required' => 'A(z) :attribute mező kitöltése kötelező.',
+    'unique' => 'A(z) :attribute már foglalt.',
+    'url' => 'A(z) :attribute formátuma érvénytelen.',
+
+    'attributes' => [
+        'name' => 'név',
+        'email' => 'e-mail cím',
+        'phone' => 'telefonszám',
+        'date' => 'dátum',
+        'time' => 'időpont',
+        'service_id' => 'szolgáltatás',
+        'voucher_code' => 'kuponkód',
+        'notes' => 'megjegyzés',
+    ],
+];

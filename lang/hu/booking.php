@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'select_service' => 'Válasszon szolgáltatást',
+    'service_details' => 'Szolgáltatás részletei',
+    'duration' => 'Időtartam',
+    'price' => 'Ár',
+    'select_date' => 'Válasszon dátumot',
+    'select_time' => 'Válasszon időpontot',
+    'no_slots_available' => 'Nincs elérhető időpont ezen a napon.',
+    'your_name' => 'Az Ön neve',
+    'your_email' => 'Az Ön e-mail címe',
+    'your_phone' => 'Az Ön telefonszáma',
+    'notes' => 'Megjegyzés',
+    'apply_voucher' => 'Kupon érvényesítése',
+    'voucher_code' => 'Kuponkód',
+    'discount_applied' => 'Kedvezmény érvényesítve',
+    'pay_deposit' => 'Foglaló fizetése',
+    'total_price' => 'Teljes ár',
+    'deposit_amount' => 'Foglaló összege',
+    'remaining_amount' => 'Fennmaradó összeg',
+    'booking_confirmed' => 'Foglalás visszaigazolva',
+    'appointment_details' => 'Időpont részletei',
+    'slot_taken' => 'Sajnos ez az időpont időközben foglalt lett.',
+    'invalid_voucher' => 'Érvénytelen kuponkód.',
+    'payment_failed' => 'A fizetés sikertelen volt.',
+];
