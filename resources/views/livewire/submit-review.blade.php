@@ -1,12 +1,12 @@
-<div class="container mx-auto px-4 py-8">
+<div class="site-container py-8 md:py-12">
     <div class="max-w-2xl mx-auto">
         <div class="flex justify-end mb-4">
             <x-language-switcher />
         </div>
-        <h1 class="text-3xl font-bold text-center mb-8">{{ __('booking.submit_review') }}</h1>
+        <h1 class="font-serif font-bold text-center mb-8">{{ __('booking.submit_review') }}</h1>
 
         @if ($error)
-            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-[15px] mb-6">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -16,7 +16,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
@@ -24,7 +24,7 @@
                 </a>
             </div>
         @elseif ($isSubmitted)
-            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-[15px] mb-6">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -33,29 +33,29 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.review_summary') }}</h2>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-brand-gold mb-4">{{ __('booking.review_summary') }}</h2>
                 <div class="space-y-4">
                     <div>
-                        <p class="text-sm text-gray-600 mb-1">{{ __('booking.your_rating') }}</p>
+                        <p class="text-sm text-brand-gold-muted mb-1">{{ __('booking.your_rating') }}</p>
                         <div class="flex gap-1">
                             @for ($i = 1; $i <= 5; $i++)
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 {{ $i <= $rating ? 'text-yellow-400' : 'text-gray-300' }}" viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 {{ $i <= $rating ? 'text-yellow-400' : 'text-brand-gold/30' }}" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                             @endfor
                         </div>
                     </div>
                     <div>
-                        <p class="text-sm text-gray-600 mb-1">{{ __('booking.your_review') }}</p>
-                        <p class="text-gray-800 bg-gray-50 p-4 rounded-lg">{{ $content }}</p>
+                        <p class="text-sm text-brand-gold-muted mb-1">{{ __('booking.your_review') }}</p>
+                        <p class="text-brand-gold-muted bg-brand-beige-light p-4 rounded-[15px]">{{ $content }}</p>
                     </div>
                 </div>
             </div>
 
             <div class="text-center">
-                <p class="text-gray-600 mb-4">{{ __('booking.review_approval_notice') }}</p>
-                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <p class="text-brand-gold-muted mb-4">{{ __('booking.review_approval_notice') }}</p>
+                <a href="{{ route('home') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
@@ -63,21 +63,21 @@
                 </a>
             </div>
         @elseif ($isValid && $appointment)
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.appointment_details') }}</h2>
-                <div class="space-y-2 text-gray-600">
-                    <p><strong>{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
-                    <p><strong>{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
-                    <p><strong>{{ __('booking.customer') }}:</strong> {{ $appointment->user_name }}</p>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-brand-gold mb-4">{{ __('booking.appointment_details') }}</h2>
+                <div class="space-y-2 text-brand-gold-muted">
+                    <p><strong class="text-brand-gold">{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
+                    <p><strong class="text-brand-gold">{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
+                    <p><strong class="text-brand-gold">{{ __('booking.customer') }}:</strong> {{ $appointment->user_name }}</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-xl font-semibold mb-6">{{ __('booking.rate_your_experience') }}</h2>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8">
+                <h2 class="font-serif font-bold text-brand-gold mb-6">{{ __('booking.rate_your_experience') }}</h2>
 
                 <form wire:submit="submitReview" class="space-y-6">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-3">{{ __('booking.select_rating') }}</label>
+                        <label class="block text-sm font-medium text-brand-gold-muted mb-3">{{ __('booking.select_rating') }}</label>
                         <div class="flex gap-2">
                             @for ($i = 1; $i <= 5; $i++)
                                 <button
@@ -85,7 +85,7 @@
                                     wire:click="setRating({{ $i }})"
                                     class="focus:outline-none transition-transform hover:scale-110"
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 transition-colors {{ $i <= $rating ? 'text-yellow-400' : 'text-gray-300 hover:text-yellow-200' }}" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 transition-colors {{ $i <= $rating ? 'text-yellow-400' : 'text-brand-gold/30 hover:text-yellow-300' }}" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                     </svg>
                                 </button>
@@ -97,26 +97,26 @@
                     </div>
 
                     <div>
-                        <label for="content" class="block text-sm font-medium text-gray-700 mb-2">{{ __('booking.write_review') }}</label>
+                        <label for="content" class="block text-sm font-medium text-brand-gold-muted mb-2">{{ __('booking.write_review') }}</label>
                         <textarea
                             id="content"
                             wire:model="content"
                             rows="5"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent resize-none"
+                            class="w-full px-4 py-3 bg-white border border-brand-gold/20 rounded-[15px] focus:ring-2 focus:ring-brand-gold focus:border-transparent resize-none text-brand-gold-muted"
                             placeholder="{{ __('booking.review_placeholder') }}"
                         ></textarea>
                         <div class="flex justify-between mt-2">
                             @error('content')
                                 <p class="text-red-500 text-sm">{{ $message }}</p>
                             @enderror
-                            <p class="text-gray-400 text-sm ml-auto">{{ strlen($content) }}/1000</p>
+                            <p class="text-brand-gold/50 text-sm ml-auto">{{ strlen($content) }}/1000</p>
                         </div>
                     </div>
 
                     <button
                         type="submit"
                         wire:loading.attr="disabled"
-                        class="w-full py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors flex items-center justify-center gap-2"
+                        class="w-full py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors flex items-center justify-center gap-2"
                     >
                         <span wire:loading.remove wire:target="submitReview">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
