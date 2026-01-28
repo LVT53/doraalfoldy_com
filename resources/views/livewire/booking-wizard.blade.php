@@ -1,5 +1,8 @@
 <div class="container mx-auto px-4 py-8">
     <div class="max-w-4xl mx-auto">
+        <div class="flex justify-end mb-4">
+            <x-language-switcher />
+        </div>
         <h1 class="text-3xl font-bold text-center mb-8">{{ __('booking.select_service') }}</h1>
 
         <div class="flex justify-center mb-8">

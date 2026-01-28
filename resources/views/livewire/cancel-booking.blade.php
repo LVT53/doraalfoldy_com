@@ -1,5 +1,8 @@
 <div class="container mx-auto px-4 py-8">
     <div class="max-w-2xl mx-auto">
+        <div class="flex justify-end mb-4">
+            <x-language-switcher />
+        </div>
         <h1 class="text-3xl font-bold text-center mb-8">{{ __('booking.cancel_appointment') }}</h1>
 
         @if ($error)
