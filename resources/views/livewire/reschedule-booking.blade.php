@@ -1,12 +1,12 @@
-<div class="container mx-auto px-4 py-8">
+<div class="site-container py-8 bg-brand-beige-light">
     <div class="max-w-4xl mx-auto">
         <div class="flex justify-end mb-4">
             <x-language-switcher />
         </div>
-        <h1 class="text-3xl font-bold text-center mb-8">{{ __('booking.reschedule_appointment') }}</h1>
+        <h1 class="font-serif font-bold text-3xl md:text-4xl text-center mb-8 text-neutral-900">{{ __('booking.reschedule_appointment') }}</h1>
 
         @if ($error)
-            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-[15px] mb-6">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -16,7 +16,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -24,7 +24,7 @@
                 </a>
             </div>
         @elseif ($isRescheduled)
-            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg mb-6">
+            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-[15px] mb-6">
                 <div class="flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -33,10 +33,10 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.new_appointment_details') }}</h2>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-lg mb-4 text-neutral-900">{{ __('booking.new_appointment_details') }}</h2>
                 @if ($appointment)
-                    <div class="space-y-2 text-gray-600">
+                    <div class="space-y-2 text-brand-gold-muted">
                         <p><strong>{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
                         <p><strong>{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
                         <p><strong>{{ __('booking.time') }}:</strong> {{ $appointment->start_time->format('H:i') }}</p>
@@ -46,8 +46,8 @@
             </div>
 
             <div class="text-center">
-                <p class="text-gray-600 mb-4">{{ __('booking.reschedule_email_sent') }}</p>
-                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors">
+                <p class="text-brand-gold-muted mb-4">{{ __('booking.reschedule_email_sent') }}</p>
+                <a href="{{ route('booking') }}" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -55,9 +55,9 @@
                 </a>
             </div>
         @elseif ($isValid && $appointment)
-            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                <h2 class="text-lg font-semibold mb-4">{{ __('booking.current_appointment') }}</h2>
-                <div class="space-y-2 text-gray-600">
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8 mb-6">
+                <h2 class="font-serif font-bold text-lg mb-4 text-neutral-900">{{ __('booking.current_appointment') }}</h2>
+                <div class="space-y-2 text-brand-gold-muted">
                     <p><strong>{{ __('booking.service') }}:</strong> {{ $appointment->service?->name }}</p>
                     <p><strong>{{ __('booking.date') }}:</strong> {{ $appointment->start_time->format('Y. F j.') }}</p>
                     <p><strong>{{ __('booking.time') }}:</strong> {{ $appointment->start_time->format('H:i') }}</p>
@@ -65,56 +65,57 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-xl font-semibold mb-6">{{ __('booking.select_new_date') }}</h2>
+            <div class="bg-brand-beige rounded-[15px] shadow-lg border border-brand-gold/5 p-6 md:p-8">
+                <h2 class="font-serif font-bold text-xl mb-6 text-neutral-900">{{ __('booking.select_new_date') }}</h2>
 
                 <div class="grid grid-cols-7 gap-2 mb-6">
                     @foreach (['H', 'K', 'Sze', 'Cs', 'P', 'Szo', 'V'] as $day)
-                        <div class="text-center text-sm font-semibold text-gray-500 py-2">{{ $day }}</div>
+                        <div class="text-center text-sm font-semibold text-brand-gold-muted py-2">{{ $day }}</div>
                     @endforeach
 
                     @php
                         $firstDay = $this->availableDates->first()?->copy()->startOfMonth() ?? now();
                         $startOfCalendar = $firstDay->copy()->startOfWeek();
                         $endOfCalendar = $firstDay->copy()->endOfMonth()->endOfWeek();
+                        $calendarDays = [];
                         $currentDay = $startOfCalendar->copy();
+                        while ($currentDay <= $endOfCalendar) {
+                            $calendarDays[] = $currentDay->copy();
+                            $currentDay->addDay();
+                        }
                     @endphp
 
-                    @while ($currentDay <= $endOfCalendar)
+                    @foreach ($calendarDays as $day)
                         @php
-                            $isAvailable = $this->availableDates->contains(fn ($date) => $date->isSameDay($currentDay));
-                            $isCurrentMonth = $currentDay->isSameMonth($firstDay);
-                            $isSelected = $selectedDate === $currentDay->format('Y-m-d');
+                            $isAvailable = $this->availableDates->contains(fn ($date) => $date->isSameDay($day));
+                            $isCurrentMonth = $day->isSameMonth($firstDay);
+                            $isSelected = $selectedDate === $day->format('Y-m-d');
                         @endphp
 
                         <button
-                            wire:click="selectDate('{{ $currentDay->format('Y-m-d') }}')"
+                            wire:click="selectDate('{{ $day->format('Y-m-d') }}')"
                             @disabled(! $isAvailable || ! $isCurrentMonth)
                             class="aspect-square flex items-center justify-center rounded-lg text-sm font-medium transition-all
                                 {{ $isSelected
                                     ? 'bg-brand-gold text-white ring-2 ring-brand-gold ring-offset-2'
                                     : ($isAvailable && $isCurrentMonth
                                         ? 'bg-brand-gold/10 text-brand-gold hover:bg-brand-gold/20 cursor-pointer'
-                                        : ($isCurrentMonth ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-transparent')
+                                        : ($isCurrentMonth ? 'bg-brand-beige-light text-brand-gold-muted/50 cursor-not-allowed' : 'bg-transparent')
                                     ) }}"
                         >
-                            {{ $currentDay->format('j') }}
+                            {{ $day->format('j') }}
                         </button>
-
-                        @php
-                            $currentDay->addDay();
-                        @endphp
-                    @endwhile
+                    @endforeach
                 </div>
 
                 @if ($selectedDate)
-                    <div class="border-t pt-6">
-                        <h3 class="text-lg font-semibold mb-4">
+                    <div class="border-t border-brand-gold/10 pt-6">
+                        <h3 class="font-serif font-bold text-lg mb-4 text-neutral-900">
                             {{ __('booking.select_new_time') }} - {{ \Carbon\Carbon::parse($selectedDate)->format('Y. F j.') }}
                         </h3>
 
                         @if ($this->availableSlots->isEmpty())
-                            <div class="text-center py-8 text-gray-500">
+                            <div class="text-center py-8 text-brand-gold-muted">
                                 {{ __('booking.no_slots_available') }}
                             </div>
                         @else
@@ -129,7 +130,7 @@
                                         class="py-3 px-4 border-2 rounded-lg transition-all duration-200 font-medium
                                             {{ $isTimeSelected
                                                 ? 'border-brand-gold bg-brand-gold text-white'
-                                                : 'border-gray-200 hover:border-brand-gold hover:bg-brand-gold/5'
+                                                : 'border-brand-gold/20 hover:border-brand-gold hover:bg-brand-gold/5'
                                             }}"
                                     >
                                         {{ $timeString }}
@@ -141,17 +142,17 @@
                 @endif
 
                 @if ($selectedDate && $selectedTime)
-                    <div class="border-t pt-6">
-                        <div class="bg-brand-gold/10 rounded-lg p-4 mb-6">
-                            <h3 class="font-semibold mb-2">{{ __('booking.new_appointment_summary') }}</h3>
-                            <p>{{ $appointment->service?->name }}</p>
-                            <p class="text-gray-600">{{ \Carbon\Carbon::parse($selectedDate)->format('Y. F j.') }} {{ $selectedTime }}</p>
+                    <div class="border-t border-brand-gold/10 pt-6">
+                        <div class="bg-brand-gold/10 rounded-[15px] p-4 mb-6">
+                            <h3 class="font-serif font-bold mb-2 text-neutral-900">{{ __('booking.new_appointment_summary') }}</h3>
+                            <p class="text-brand-gold-muted">{{ $appointment->service?->name }}</p>
+                            <p class="text-brand-gold-muted">{{ \Carbon\Carbon::parse($selectedDate)->format('Y. F j.') }} {{ $selectedTime }}</p>
                         </div>
 
                         <button
                             wire:click="confirmReschedule"
                             wire:loading.attr="disabled"
-                            class="w-full py-3 bg-brand-gold text-white font-semibold rounded-lg hover:bg-brand-gold/90 transition-colors flex items-center justify-center gap-2"
+                            class="w-full py-3 bg-brand-gold text-white font-semibold rounded-[15px] hover:bg-brand-gold/90 transition-colors flex items-center justify-center gap-2 shadow-lg"
                         >
                             <span wire:loading.remove wire:target="confirmReschedule">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
