@@ -3,7 +3,7 @@
 @section('title', 'Smink tanácsadás | Alföldy Dóra')
 
 @section('page')
-    <x-sections.service-hero 
+    <x-sections.service-hero
         title="Smink <span class='text-brand-gold'>Tanácsadás</span>"
         category="Workshop"
         text="A személyre szabott smink magabiztossá és kiegyensúlyozottá tesz minket nőket, ami által jobban érezzük magukat a bőrünkben."
@@ -15,7 +15,7 @@
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
-    <x-sections.content-card 
+    <x-sections.content-card
         title="Smink tanácsadás"
         text="A mindennapi rohanás és a sok teendő mellett néha lassíts, és lélegezz fel egy kicsit. Kapcsolj ki, lazíts és törődj magaddal. Ebben szeretnék Neked segíteni. Egy olyan smink tanácsadást álmodtam meg, ahol egyszerre tudsz kikapcsolni és tanulni. Az alapoktól kezdve elsajátíthatod a számodra legtökéletesebb nappali smink csínját-bínját. Lesd el tőlem a profi trükköket, hozd ki magadból a legjobbat!"
         priceDetails="<strong>Időtartam:</strong> 2 – 3 óra
@@ -27,9 +27,9 @@
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
-    <x-sections.content-card 
+    <x-sections.content-card
         title="Ismerd meg önmagad!"
-        text="Ahhoz, hogy tökéletes natúr sminket sajátíthasd el először meg kell ismerned önmagad. Az adottságaid, a vonásaid és the belső éned. Ezen az úton segítségedre leszek, hogy közösön megtaláljuk a számodra legszebb és legpraktikusabb sminket, melyet könnyen elkészíthetsz.
+        text="Ahhoz, hogy tökéletes natúr sminket sajátíthasd el először meg kell ismerned önmagad. Az adottságaid, a vonásaid és a belső éned. Ezen az úton segítségedre leszek, hogy közösön megtaláljuk a számodra legszebb és legpraktikusabb sminket, melyet könnyen elkészíthetsz.
 
         Ha szeretnél ezt az időt megosztani valakivel akkor hozd magaddal a barátnőd, testvéred vagy édesanyád és vegyétek igénybe kedvezményesen a sminktanácsadást."
         featuresTitle="Miért válassz engem?"
@@ -46,7 +46,7 @@
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
-    <x-sections.content-card 
+    <x-sections.content-card
         title="Mit tudsz elsajátítani a sminktanácsadás során?"
         text="<strong>Személyre szabott sminket, ami a legjobban illik hozzád</strong>
         A tanácsadás során elkészítjük a számodra legtökéletesebb, legkényelmesebb sminket, amely mindenhol megállja a helyét. Legyen az egy vacsora vagy egy nagyobb esemény.

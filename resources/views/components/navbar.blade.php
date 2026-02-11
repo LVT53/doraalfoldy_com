@@ -10,7 +10,7 @@
     @endif
 
     <div class="backdrop-blur-[20px] bg-white/80 border-b border-brand-gold/5">
-        <div class="w-[93%] md:w-[87%] mx-auto py-3 flex justify-between items-center text-neutral-600">
+        <div class="max-w-[1700px] w-[93%] md:w-[87%] mx-auto py-3 flex justify-between items-center text-neutral-600">
         <a href="{{ route('home') }}" class="flex-shrink-0">
             <img
                 src="{{ asset('images/content/DORAALFOLDI-logo-OK-MERGED-alaplogo.png') }}"

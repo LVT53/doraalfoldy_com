@@ -7,7 +7,6 @@
         title="Szempilla <span class='text-brand-gold'>Styling</span>"
         category="Szempilla"
         text="A szempilla hosszabbítással szép és látványos hatást lehet elérni, amely kiemeli a tekinteted. Ez egy olyan technika, amivel nem csak dúsabb, hanem hosszabb szempillákat varázsolhatunk Neked."
-        secondaryText="Amennyiben jelenleg nincs fent műszempillád akkor új szettre tudsz bejelentkezni majd a későbbiekben (2, 3 vagy 4 hétre) töltésre. Más által készített műszempillát nem áll módomban tölteni, ilyenkor az leoldásra kerül és új szett kerül felhelyezésre. Erre azért van szükség mert rengetegen dolgozunk ebben a szakmában és mindenki más-más termékkel dolgozik, ezért így tudok egységes és szép munkát kiadni a kezemből."
         image="/images/content/DSC_7810-scaled-min.jpg"
         imageAlt="Szempilla munka"
         width="w-[75%]"
@@ -103,7 +102,7 @@
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 
     <x-sections.rich-text title="Konzultáció és javaslatok" width="w-[93%] md:w-[75%]">
-        <p>Ahhoz, hogy a hozzád legjobban passzoló szettet készítsem el, szeretnélek megismerni egy kicsit. Ha új vendégként érkezel hozzám, akkor mindig tartunk egy rövid konzultációt. A pár perces konzultáció célja, hogy személyiségedhez, stílusodhoz és igényeidhez legjobban illő szempillákat készítsem el neked. Törepszem arra, hogy a legjobb szettet válasszuk ki számodra, amivel azonosulni tudsz és kényelmes viseletként szolgálhat a hétköznapokban is. Ha még sosem volt műszempillád, akkor arra is szánunk időt, hogy többet tudhass meg róla. Igyekszem olyan környezetet teremteni, ahol kényelmesen érezheted magad, kikapcsolhatsz és lazíthatsz miközben szépülsz. Új, hosszantartó szempilláid érdekében pedig azok megfelelő ápolását is megbeszéljük.</p>
+        <p>Ahhoz, hogy a hozzád legjobban passzoló szettet készítsem el, szeretnélek megismerni egy kicsit. Ha új vendégként érkezel hozzám, akkor mindig tartunk egy rövid konzultációt. A pár perces konzultáció célja, hogy személyiségedhez, stílusodhoz és igényeidhez legjobban illő szempillákat készítsem el neked. Törekszem arra, hogy a legjobb szettet válasszuk ki számodra, amivel azonosulni tudsz és kényelmes viseletként szolgálhat a hétköznapokban is. Ha még sosem volt műszempillád, akkor arra is szánunk időt, hogy többet tudhass meg róla. Igyekszem olyan környezetet teremteni, ahol kényelmesen érezheted magad, kikapcsolhatsz és lazíthatsz miközben szépülsz. Új, hosszantartó szempilláid érdekében pedig azok megfelelő ápolását is megbeszéljük.</p>
 
         <p><strong>A szép és tartós műszempilla érdekében több tényezőt is figyelembe kell venni a szempillázás előtt és után is.</strong></p>
 
@@ -128,7 +127,9 @@
 
     <x-sections.content-card
         title="Töltés"
-        text="Ha valaki elsőre találkozik a műszempillával jogosan merülhet fel benne a kérdés, hogy mi az a töltés és miért van rá szükség. A természetes szempillák folyamatosan cserélődnek ez által a saját szempillával együtt kihullhatnak a műpillák, ami elsőre ijesztő lehet, de ez egy teljesen természetes folyamat. Minden szempilla más-más ütemben nő le. Egy ember szempilla állománya kb 90-120 nap alatt cserélődik ki. Egy hét alatt 3-5 szál saját szempilla hullik ki. Ez által ki lehet számolni, hogy a teljes állomány kb 50-70%-a 3 hét alatt kihullik. A lenőtt pillákat eltávolítjuk, a kihullott pillák helyére pedig újak nőnek ezekre pedig új műpillák kerülnek fel. Ez ezért van szükség a töltésre."
+        text="Ha valaki elsőre találkozik a műszempillával jogosan merülhet fel benne a kérdés, hogy mi az a töltés és miért van rá szükség. A természetes szempillák folyamatosan cserélődnek ez által a saját szempillával együtt kihullhatnak a műpillák, ami elsőre ijesztő lehet, de ez egy teljesen természetes folyamat. Minden szempilla más-más ütemben nő le. Egy ember szempilla állománya kb 90-120 nap alatt cserélődik ki. Egy hét alatt 3-5 szál saját szempilla hullik ki. Ez által ki lehet számolni, hogy a teljes állomány kb 50-70%-a 3 hét alatt kihullik. A lenőtt pillákat eltávolítjuk, a kihullott pillák helyére pedig újak nőnek ezekre pedig új műpillák kerülnek fel. Ezért van szükség töltésre.
+
+        Amennyiben jelenleg nincs fent műszempillád akkor új szettre tudsz bejelentkezni majd a későbbiekben (2, 3 vagy 4 hétre) töltésre. Más által készített műszempillát nem áll módomban tölteni, ilyenkor az leoldásra kerül és új szett kerül felhelyezésre. Erre azért van szükség mert rengetegen dolgozunk ebben a szakmában és mindenki más-más termékkel dolgozik, ezért így tudok egységes és szép munkát kiadni a kezemből."
         image="/images/content/DSC_7854-min.jpg"
         width="w-[75%]"
     />

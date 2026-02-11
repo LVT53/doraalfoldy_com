@@ -17,7 +17,7 @@
             @endif
 
             @foreach($buttons as $button)
-                <a href="{{ $button['href'] }}" class="group block bg-brand-gold-light/20 hover:bg-brand-gold-light/40 p-8 rounded-[15px] transition-all duration-500 shadow-md hover:shadow-xl border border-brand-gold/5">
+                <a href="{{ $button['href'] }}" class="group block bg-brand-gold-light/50 hover:bg-brand-gold-light/80 p-8 rounded-[15px] transition-all duration-500 shadow-md hover:shadow-xl border border-brand-gold/5">
                     <h2 class="text-2xl text-brand-gold mb-2 group-hover:translate-x-1 transition-transform duration-500 tracking-tight font-bold">{{ $button['title'] }}</h2>
                     <p class="text-neutral-600 leading-relaxed mb-4 opacity-90">{{ $button['text'] }}</p>
                     <div class="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-sm group-hover:bg-brand-gold group-hover:text-white transition-all duration-500">
@@ -30,10 +30,10 @@
         <div class="lg:w-1/2 w-full order-1 lg:order-2">
             @if($image)
                 <div class="h-full">
-                    <x-ui.responsive-image 
-                        src="{{ $image }}" 
-                        alt="{{ $imageAlt }}" 
-                        class="rounded-[15px] shadow-2xl w-full h-full object-cover" 
+                    <x-ui.responsive-image
+                        src="{{ $image }}"
+                        alt="{{ $imageAlt }}"
+                        class="rounded-[15px] shadow-2xl w-full h-full object-cover"
                     />
                 </div>
             @endif

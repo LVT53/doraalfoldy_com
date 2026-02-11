@@ -117,7 +117,7 @@
 }
 
 .header-para {
-    @apply text-brand-gold-muted text-[16px] md:text-[18px] leading-[1.6] font-medium;
+    @apply text-brand-gold-muted text-[16px] md:text-[17px] leading-[1.6] font-medium;
 }
 
 .header-button {

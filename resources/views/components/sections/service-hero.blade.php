@@ -21,7 +21,7 @@
                     :sizes="$sizes"
                 />
             @endif
-            <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent to-transparent hidden lg:block"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent via-30% to-transparent hidden lg:block"></div>
             <div class="absolute inset-0 bg-brand-beige-header/20 lg:hidden backdrop-blur-[0.5px]"></div>
         </div>
 

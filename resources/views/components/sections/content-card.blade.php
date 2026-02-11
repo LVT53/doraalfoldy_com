@@ -5,6 +5,8 @@
     'imageAlt' => '',
     'featuresTitle' => 'Neked ajánlom, ha:',
     'features' => [],
+    'features2Title' => '',
+    'features2' => [],
     'priceDetails' => null,
     'reverse' => false,
     'buttonHref' => null,
@@ -43,6 +45,20 @@
                         <h4 class="text-label mb-5">{{ $featuresTitle }}</h4>
                         <ul class="space-y-4">
                             @foreach($features as $feature)
+                                <li class="flex items-start gap-3 text-neutral-600 font-medium">
+                                    <svg class="w-5 h-5 text-brand-gold mt-1 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    {{ $feature }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if(count($features2) > 0)
+                    <div class="mb-8 p-0 border-t border-brand-gold/10 pt-8">
+                        <h4 class="text-label mb-5">{{ $features2Title }}</h4>
+                        <ul class="space-y-4">
+                            @foreach($features2 as $feature)
                                 <li class="flex items-start gap-3 text-neutral-600 font-medium">
                                     <svg class="w-5 h-5 text-brand-gold mt-1 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                                     {{ $feature }}

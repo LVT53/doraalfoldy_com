@@ -8,7 +8,7 @@
 
 <section class="site-container my-10 space-y-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="bg-brand-beige-header/70 rounded-[15px] p-6 md:p-8 shadow-lg flex items-center justify-center">
+        <div class="bg-brand-beige-header/80 rounded-[15px] p-6 md:p-8 shadow-lg flex items-center justify-center">
             <div class="max-w-xl">
                 @if($title)
                     <h1 class="mb-4 leading-tight">
@@ -22,7 +22,7 @@
                 @endif
             </div>
         </div>
-        <div class="bg-brand-beige-header/30 rounded-[15px] p-6 md:p-8 shadow-lg flex items-center justify-center">
+        <div class="bg-brand-beige-header/50 rounded-[15px] p-6 md:p-8 shadow-lg flex items-center justify-center">
             <div class="max-w-xl">
                 @if($secondaryTitle)
                     <h2 class="mb-4 text-brand-gold">

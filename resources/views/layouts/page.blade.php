@@ -17,7 +17,7 @@
     <div id="top"></div>
     <x-navbar />
 
-    <main id="main-content">
+    <main class="max-w-[1700px] mr-auto ml-auto" id="main-content">
         @yield('page')
     </main>
 
