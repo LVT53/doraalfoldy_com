@@ -38,7 +38,7 @@
         ];
     @endphp
 
-    <section class="site-container pt-12 pb-6 md:pt-16 md:pb-8 text-center">
+    <section class="site-container lg:pt-12 lg:pb-6 text-center">
         <div class="inline-flex items-center gap-3 mb-2">
             <div class="w-8 h-px bg-brand-gold/50"></div>
             <span class="text-label">Galéria</span>

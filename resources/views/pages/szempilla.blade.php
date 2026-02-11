@@ -5,7 +5,7 @@
 @section('page')
     <x-sections.service-hero
         title="Szempilla <span class='text-brand-gold'>Styling</span>"
-        category="Szempilla"
+        category="Rád szabva"
         text="A szempilla hosszabbítással szép és látványos hatást lehet elérni, amely kiemeli a tekinteted. Ez egy olyan technika, amivel nem csak dúsabb, hanem hosszabb szempillákat varázsolhatunk Neked."
         image="/images/content/DSC_7810-scaled-min.jpg"
         imageAlt="Szempilla munka"

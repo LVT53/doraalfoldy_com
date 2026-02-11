@@ -6,7 +6,7 @@
     'secondaryText' => null,
 ])
 
-<section class="site-container my-10 space-y-6">
+<section class="site-container lg:my-10 space-y-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div class="bg-brand-beige-header/80 rounded-[15px] p-6 md:p-8 shadow-lg flex items-center justify-center">
             <div class="max-w-xl">

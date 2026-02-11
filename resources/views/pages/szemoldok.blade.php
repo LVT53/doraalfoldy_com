@@ -5,7 +5,7 @@
 @section('page')
     <x-sections.service-hero
         title="Szemöldök"
-        category="Szemöldök"
+        category="Az arcod kerete"
         text="A szemöldök az egyik legfontosabb része az arcnak. Egy szép, jó ívű, színű és formájú szemöldök nagyban hozzájárul az arc kifejezőképességéhez."
         secondaryText="A szemöldök szálak növekedése, hossza, valamint az, hogy hova esik a szemöldökcsonton szintén befolyásoló tényező. Mindenkinek egyénre szabottan készítem el a számára előnyös ívű, formájú, színű szemöldököt úgy, hogy természetes hatású legyen."
         image="/images/content/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510.jpeg"

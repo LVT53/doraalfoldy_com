@@ -3,10 +3,9 @@
     'image' => null,
     'imageAlt' => '',
     'buttons' => [],
-    'buttons2' => [],
 ])
 
-<section class="site-container my-12 md:my-16">
+<section class="site-container lg:my-12 md:hidden">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
         <div class="lg:w-1/2 space-y-6 order-2 lg:order-1 flex flex-col">
             @if($text)

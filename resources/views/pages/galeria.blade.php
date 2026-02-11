@@ -3,7 +3,7 @@
 @section('title', 'Galéria | Alföldy Dóra')
 
 @section('page')
-    <section class="site-container my-12 md:my-20">
+    <section class="site-container lg:my-12">
         <div class="relative lg:min-h-[75vh] flex flex-col lg:flex-row items-stretch lg:items-center">
             {{-- Main Image - Top on mobile, Shifted right on desktop --}}
             <div class="relative lg:absolute lg:right-0 lg:top-0 w-full lg:w-[70%] h-[400px] lg:h-full rounded-[30px] overflow-hidden shadow-2xl border border-brand-gold/10 order-1 lg:order-none">
@@ -25,7 +25,7 @@
                 </div>
 
                 <h1 class="mb-10">
-                    Munkáim <span class="text-brand-gold">&</span> Stílus
+                    Munkáim <span class="text-brand-gold">&</span> Stílusom
                 </h1>
 
                 <p class="header-para text-neutral-600 mb-12 max-w-sm italic font-medium">

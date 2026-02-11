@@ -9,7 +9,7 @@
     'sizes' => '(max-width: 1024px) 100vw, 70vw',
 ])
 
-<section class="w-[93%] md:{{ $width }} mx-auto my-12 md:my-20">
+<section class="w-[93%] md:{{ $width }} mx-auto lg:my-12">
     <div class="relative lg:min-h-[65vh] flex flex-col lg:flex-row items-stretch lg:items-center mb-12 lg:mb-20">
         {{-- Main Image - Top on mobile, Shifted right on desktop --}}
         <div class="relative lg:absolute lg:right-0 lg:top-0 w-full lg:w-[70%] h-[350px] md:h-[450px] lg:h-full rounded-[30px] overflow-hidden shadow-2xl border border-brand-gold/10 order-1 lg:order-none">
@@ -22,7 +22,7 @@
                 />
             @endif
             <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent via-30% to-transparent hidden lg:block"></div>
-            <div class="absolute inset-0 bg-brand-beige-header/20 lg:hidden backdrop-blur-[0.5px]"></div>
+            <div class="absolute inset-0 lg:bg-brand-beige-header/20 lg:hidden backdrop-blur-[0.5px]"></div>
         </div>
 
         {{-- Text Content - Bottom on mobile, Floating left on desktop --}}

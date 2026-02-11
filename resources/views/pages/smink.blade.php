@@ -5,7 +5,7 @@
 @section('page')
     <x-sections.service-hero
         title="Smink"
-        category="Smink"
+        category="A legjobb éned"
         text="Hiszek abban, hogy egy személyre szabott smink kiemel és nem eltakar. A vonásaid, a stílusod és a karaktered kerül kiemelésre."
         secondaryText="Törekszem arra, hogy a sminkelés során megismerjelek téged annyira, hogy a legtökéletesebb sminket tudjam elkészíteni neked."
         image="/images/content/DSC_4145-min.jpg"
