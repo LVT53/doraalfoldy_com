@@ -9,7 +9,7 @@
         </div>
     @endif
 
-    <div class="backdrop-blur-[20px] bg-white/80 border-b border-brand-gold/5">
+    <div class="backdrop-blur-[20px] bg-white/65 border-b border-brand-gold/5">
         <div class="max-w-[1700px] w-[93%] md:w-[87%] mx-auto py-3 flex justify-between items-center text-neutral-600">
         <a href="{{ route('home') }}" class="flex-shrink-0">
             <img
@@ -23,14 +23,32 @@
         <div class="hidden lg:flex items-center space-x-2">
             <a href="{{ route('home') }}" class="nav-link px-3 py-1 text-[14px] font-bold transition-colors {{ request()->routeIs('home') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">Kezdőlap</a>
 
-            <div x-data="{ open: false }" class="relative py-1" @mouseenter="open = true" @mouseleave="open = false">
-                <button class="nav-link px-3 text-[14px] font-bold flex items-center transition-colors {{ request()->routeIs('smink', 'szempilla', 'szemoldok', 'smink-tanacsadas') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">
+            <div x-data="{
+                    open: false,
+                    top: 0,
+                    left: 0,
+                    width: 224,
+                    timer: null,
+                    position() {
+                        const r = $refs.trigger.getBoundingClientRect();
+                        this.top = r.bottom + 8;
+                        this.left = r.left;
+                        this.open = true;
+                    }
+                 }"
+                 class="relative py-1"
+                 @mouseenter="clearTimeout(timer); position()"
+                 @mouseleave="timer = setTimeout(() => open = false, 150)">
+                <button x-ref="trigger" class="nav-link px-3 text-[14px] font-bold flex items-center transition-colors {{ request()->routeIs('smink', 'szempilla', 'szemoldok', 'smink-tanacsadas') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">
                     Szolgáltatások
                     <svg class="ml-1.5 h-3.5 w-3.5 transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
-                <div x-show="open"
-                     class="absolute left-0 top-full pt-2 w-56 z-50">
-                    <div class="bg-white/95 backdrop-blur-md shadow-lg rounded-xl py-3 border border-brand-gold/10 overflow-hidden"
+                <template x-teleport="body">
+                    <div x-show="open"
+                         @mouseenter="clearTimeout(timer)"
+                         @mouseleave="timer = setTimeout(() => open = false, 150)"
+                         :style="`position: fixed; top: ${top}px; left: ${left}px; width: ${width}px; z-index: 99999;`"
+                         class="bg-white/45 backdrop-blur-2xl backdrop-saturate-150 shadow-lg rounded-xl py-3 border border-brand-gold/10 overflow-hidden"
                          x-transition:enter="transition ease-out duration-200"
                          x-transition:enter-start="opacity-0 translate-y-1"
                          x-transition:enter-end="opacity-100 translate-y-0">
@@ -39,26 +57,44 @@
                         <a href="{{ route('szemoldok') }}" class="block px-5 py-2 text-[14px] font-semibold hover:text-brand-gold hover:bg-brand-beige/30 transition-all">Szemöldök</a>
                         <a href="{{ route('smink-tanacsadas') }}" class="block px-5 py-2 text-[14px] font-semibold hover:text-brand-gold hover:bg-brand-beige/30 transition-all">Smink tanácsadás</a>
                     </div>
-                </div>
+                </template>
             </div>
 
             <a href="{{ route('galeria') }}" class="nav-link px-3 py-1 text-[14px] font-bold transition-colors {{ request()->routeIs('galeria*') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">Galéria</a>
 
-            <div x-data="{ open: false }" class="relative py-1" @mouseenter="open = true" @mouseleave="open = false">
-                <button class="nav-link px-3 text-[14px] font-bold flex items-center transition-colors {{ request()->routeIs('gdpr', 'aszf') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">
+            <div x-data="{
+                    open: false,
+                    top: 0,
+                    left: 0,
+                    width: 192,
+                    timer: null,
+                    position() {
+                        const r = $refs.trigger.getBoundingClientRect();
+                        this.top = r.bottom + 8;
+                        this.left = r.left;
+                        this.open = true;
+                    }
+                 }"
+                 class="relative py-1"
+                 @mouseenter="clearTimeout(timer); position()"
+                 @mouseleave="timer = setTimeout(() => open = false, 150)">
+                <button x-ref="trigger" class="nav-link px-3 text-[14px] font-bold flex items-center transition-colors {{ request()->routeIs('gdpr', 'aszf') ? 'text-brand-gold underline underline-offset-4 decoration-2' : 'hover:text-brand-gold' }}">
                     Info
                     <svg class="ml-1.5 h-3.5 w-3.5 transition-transform duration-300" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
-                <div x-show="open"
-                     class="absolute left-0 top-full pt-2 w-48 z-50">
-                    <div class="bg-white/95 backdrop-blur-md shadow-lg rounded-xl py-3 border border-brand-gold/10 overflow-hidden"
+                <template x-teleport="body">
+                    <div x-show="open"
+                         @mouseenter="clearTimeout(timer)"
+                         @mouseleave="timer = setTimeout(() => open = false, 150)"
+                         :style="`position: fixed; top: ${top}px; left: ${left}px; width: ${width}px; z-index: 99999;`"
+                         class="bg-white/45 backdrop-blur-2xl backdrop-saturate-150 shadow-lg rounded-xl py-3 border border-brand-gold/10 overflow-hidden"
                          x-transition:enter="transition ease-out duration-200"
                          x-transition:enter-start="opacity-0 translate-y-1"
                          x-transition:enter-end="opacity-100 translate-y-0">
                         <a href="{{ route('gdpr') }}" class="block px-5 py-2 text-[14px] font-semibold hover:text-brand-gold hover:bg-brand-beige/30 transition-all">GDPR</a>
                         <a href="{{ route('aszf') }}" class="block px-5 py-2 text-[14px] font-semibold hover:text-brand-gold hover:bg-brand-beige/30 transition-all">ÁSZF</a>
                     </div>
-                </div>
+                </template>
             </div>
 
             <div class="w-px h-6 bg-brand-gold/20 mx-4"></div>

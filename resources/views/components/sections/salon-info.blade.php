@@ -76,7 +76,7 @@
                     <div class="group/item">
                         <span class="text-label !text-neutral-700 opacity-60 block mb-2">Telefon</span>
                         <a href="tel:{{ str_replace(' ', '', $phone) }}" class="text-xl md:text-2xl font-serif font-bold hover:text-neutral-400 transition-colors flex items-start gap-3">
-                            <svg class="w-6 h-6 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 011.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.256c-.502-.143-.974.173-1.137.648l-.7 2.036a1.125 1.125 0 0 1-1.246.764 11.97 11.97 0 0 1-7.06-7.06 1.125 1.125 0 0 1 .764-1.246l2.036-.7c.475-.163.791-.635.648-1.137L8.23 3.352a1.125 1.125 0 0 0-1.091-.852H5.25A2.25 2.25 0 0 0 3 4.75v2z"/></svg>
                             {{ $phone }}
                         </a>
                     </div>

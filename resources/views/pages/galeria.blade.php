@@ -61,7 +61,6 @@
             <x-ui.responsive-image src="/images/content/IMG_9163-510x616.jpg" alt="Szempilla" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
                 <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Szempilla</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>
@@ -71,7 +70,6 @@
             <x-ui.responsive-image src="/images/content/DSC_47851-510x764.jpg" alt="Smink" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
                 <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Smink</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>
@@ -81,7 +79,6 @@
             <x-ui.responsive-image src="/images/content/image1-510x765.jpeg" alt="Szemöldök" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/95 via-neutral-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
             <div class="absolute bottom-12 left-10 right-10">
-                <span class="text-label !text-white mb-4 block opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">Megtekintés</span>
                 <p class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-none uppercase">Szemöldök</p>
                 <div class="w-12 h-1.5 bg-brand-gold transition-all duration-700 group-hover:w-full rounded-full"></div>
             </div>

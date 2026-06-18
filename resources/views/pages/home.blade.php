@@ -108,7 +108,7 @@
     <section class="w-[93%] md:w-[75%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div class="flex items-center gap-4 bg-brand-beige-light p-6 rounded-xl shadow-md border border-brand-gold/5">
             <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-gold">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 011.94.86l-.85 4.03a1 1 0 01-1.08.79L7.19 7.19a11.03 11.03 0 005.62 5.62l1.61-1.61a1 1 0 011.14-.23l4.03.85a1 1 0 01.86 1.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.256c-.502-.143-.974.173-1.137.648l-.7 2.036a1.125 1.125 0 0 1-1.246.764 11.97 11.97 0 0 1-7.06-7.06 1.125 1.125 0 0 1 .764-1.246l2.036-.7c.475-.163.791-.635.648-1.137L8.23 3.352a1.125 1.125 0 0 0-1.091-.852H5.25A2.25 2.25 0 0 0 3 4.75v2z"/></svg>
             </div>
             <a href="tel:+36309710393" class="font-bold text-brand-gold-muted hover:text-brand-gold transition-colors">+36 30 971 0393</a>
         </div>
