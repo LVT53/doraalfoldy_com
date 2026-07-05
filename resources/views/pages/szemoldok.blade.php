@@ -11,6 +11,7 @@
         image="/images/content/FL-3-min.jpg"
         imageAlt="Szemöldök munka"
         width="w-[75%]"
+        wideImage="true"
     />
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>

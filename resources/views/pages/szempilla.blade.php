@@ -11,6 +11,7 @@
         imageAlt="Szempilla munka"
         width="w-[75%]"
         overlayVia="12%"
+        wideImage="true"
     />
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>

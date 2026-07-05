@@ -8,6 +8,7 @@
     'width' => 'w-[87%]',
     'sizes' => '(max-width: 1024px) 100vw, 70vw',
     'overlayVia' => '30%',
+    'wideImage' => false,
 ])
 
 @php
@@ -15,10 +16,17 @@
         '12%' => 'via-12%',
         default => 'via-30%',
     };
+    // The hero box's width is capped by the page's max-w-[1700px] container,
+    // but its height used to keep growing with 65vh. On tall desktop viewports
+    // (1440p, 4K) that made the box far narrower than the photo's 3:2 aspect
+    // ratio, cropping deep into whoever's on the left. Capping the row's
+    // height at 600px keeps the crop at roughly the same (mild) level as a
+    // typical 1080p screen, however tall the monitor actually is.
+    $rowMinHClass = $wideImage ? 'lg:min-h-[min(65vh,600px)]' : 'lg:min-h-[65vh]';
 @endphp
 
 <section class="w-[93%] md:{{ $width }} mx-auto lg:my-12">
-    <div class="relative lg:min-h-[65vh] flex flex-col lg:flex-row items-stretch lg:items-center mb-12 lg:mb-20">
+    <div class="relative {{ $rowMinHClass }} flex flex-col lg:flex-row items-stretch lg:items-center mb-12 lg:mb-20">
         {{-- Main Image - Top on mobile, Shifted right on desktop --}}
         <div class="relative lg:absolute lg:right-0 lg:top-0 w-full lg:w-[70%] h-[350px] md:h-[450px] lg:h-full rounded-[30px] overflow-hidden shadow-2xl border border-brand-gold/10 order-1 lg:order-none">
             @if($image)
