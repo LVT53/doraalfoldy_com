@@ -8,15 +8,16 @@
     'priceDetails' => null,
     'buttonHref' => 'https://doraalfoldy.salonic.hu/',
     'sizes' => '(max-width: 1024px) 100vw, 40vw',
+    'imagePosition' => 'object-center',
 ])
 
 <div class="bg-brand-beige rounded-[30px] overflow-hidden shadow-lg flex flex-col h-full hover:shadow-2xl transition-all duration-700 group border border-brand-gold/5">
     @if($image)
         <div class="shrink-0 bg-white/10 aspect-[4/3] overflow-hidden">
-            <x-ui.responsive-image 
-                src="{{ $image }}" 
-                alt="{{ $imageAlt }}" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+            <x-ui.responsive-image
+                src="{{ $image }}"
+                alt="{{ $imageAlt }}"
+                class="w-full h-full object-cover {{ $imagePosition }} group-hover:scale-105 transition-transform duration-700"
                 :sizes="$sizes"
             />
         </div>

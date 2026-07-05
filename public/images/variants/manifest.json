@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-01-27T16:22:50.690Z",
+  "generatedAt": "2026-07-05T15:00:40.024Z",
   "images": {
     "images/content/49FF2092-EB0D-4C7C-A6D7-E8E40E5CFF83-min-p-500.jpeg": {
       "webp": {
@@ -66,24 +66,6 @@
         "320": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-p-500-320.avif",
         "360": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-p-500-360.avif",
         "480": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-p-500-480.avif"
-      }
-    },
-    "images/content/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min.jpg": {
-      "webp": {
-        "240": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-240.webp",
-        "320": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-320.webp",
-        "360": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-360.webp",
-        "480": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-480.webp",
-        "640": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-640.webp",
-        "720": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-720.webp"
-      },
-      "avif": {
-        "240": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-240.avif",
-        "320": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-320.avif",
-        "360": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-360.avif",
-        "480": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-480.avif",
-        "640": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-640.avif",
-        "720": "/images/variants/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min-720.avif"
       }
     },
     "images/content/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-min-p-500.jpg": {
@@ -182,20 +164,6 @@
         "320": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-p-500-320.avif",
         "360": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-p-500-360.avif",
         "480": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-p-500-480.avif"
-      }
-    },
-    "images/content/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510.jpeg": {
-      "webp": {
-        "240": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-240.webp",
-        "320": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-320.webp",
-        "360": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-360.webp",
-        "480": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-480.webp"
-      },
-      "avif": {
-        "240": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-240.avif",
-        "320": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-320.avif",
-        "360": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-360.avif",
-        "480": "/images/variants/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510-480.avif"
       }
     },
     "images/content/BAC1A83C-2B44-435E-8CA9-BEFB85DFFC65-2-min-p-500.jpg": {
@@ -2780,20 +2748,6 @@
         "480": "/images/variants/DSC_7810-scaled-min-p-500-480.avif"
       }
     },
-    "images/content/DSC_7810-scaled-min.jpg": {
-      "webp": {
-        "240": "/images/variants/DSC_7810-scaled-min-240.webp",
-        "320": "/images/variants/DSC_7810-scaled-min-320.webp",
-        "360": "/images/variants/DSC_7810-scaled-min-360.webp",
-        "480": "/images/variants/DSC_7810-scaled-min-480.webp"
-      },
-      "avif": {
-        "240": "/images/variants/DSC_7810-scaled-min-240.avif",
-        "320": "/images/variants/DSC_7810-scaled-min-320.avif",
-        "360": "/images/variants/DSC_7810-scaled-min-360.avif",
-        "480": "/images/variants/DSC_7810-scaled-min-480.avif"
-      }
-    },
     "images/content/DSC_7830-min-p-500.jpg": {
       "webp": {
         "240": "/images/variants/DSC_7830-min-p-500-240.webp",
@@ -2964,20 +2918,6 @@
         "480": "/images/variants/DSC_7854-min-p-500-480.avif"
       }
     },
-    "images/content/DSC_7854-min.jpg": {
-      "webp": {
-        "240": "/images/variants/DSC_7854-min-240.webp",
-        "320": "/images/variants/DSC_7854-min-320.webp",
-        "360": "/images/variants/DSC_7854-min-360.webp",
-        "480": "/images/variants/DSC_7854-min-480.webp"
-      },
-      "avif": {
-        "240": "/images/variants/DSC_7854-min-240.avif",
-        "320": "/images/variants/DSC_7854-min-320.avif",
-        "360": "/images/variants/DSC_7854-min-360.avif",
-        "480": "/images/variants/DSC_7854-min-480.avif"
-      }
-    },
     "images/content/DSC_7854-min_1-p-500.jpg": {
       "webp": {
         "240": "/images/variants/DSC_7854-min_1-p-500-240.webp",
@@ -3132,6 +3072,146 @@
         "640": "/images/variants/DSC_7877-min-640.avif",
         "720": "/images/variants/DSC_7877-min-720.avif",
         "960": "/images/variants/DSC_7877-min-960.avif"
+      }
+    },
+    "images/content/FL-1-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-1-min-240.webp",
+        "320": "/images/variants/FL-1-min-320.webp",
+        "360": "/images/variants/FL-1-min-360.webp",
+        "480": "/images/variants/FL-1-min-480.webp",
+        "640": "/images/variants/FL-1-min-640.webp",
+        "720": "/images/variants/FL-1-min-720.webp",
+        "960": "/images/variants/FL-1-min-960.webp",
+        "1280": "/images/variants/FL-1-min-1280.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-1-min-240.avif",
+        "320": "/images/variants/FL-1-min-320.avif",
+        "360": "/images/variants/FL-1-min-360.avif",
+        "480": "/images/variants/FL-1-min-480.avif",
+        "640": "/images/variants/FL-1-min-640.avif",
+        "720": "/images/variants/FL-1-min-720.avif",
+        "960": "/images/variants/FL-1-min-960.avif",
+        "1280": "/images/variants/FL-1-min-1280.avif"
+      }
+    },
+    "images/content/FL-23-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-23-min-240.webp",
+        "320": "/images/variants/FL-23-min-320.webp",
+        "360": "/images/variants/FL-23-min-360.webp",
+        "480": "/images/variants/FL-23-min-480.webp",
+        "640": "/images/variants/FL-23-min-640.webp",
+        "720": "/images/variants/FL-23-min-720.webp",
+        "960": "/images/variants/FL-23-min-960.webp",
+        "1280": "/images/variants/FL-23-min-1280.webp",
+        "1600": "/images/variants/FL-23-min-1600.webp",
+        "1920": "/images/variants/FL-23-min-1920.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-23-min-240.avif",
+        "320": "/images/variants/FL-23-min-320.avif",
+        "360": "/images/variants/FL-23-min-360.avif",
+        "480": "/images/variants/FL-23-min-480.avif",
+        "640": "/images/variants/FL-23-min-640.avif",
+        "720": "/images/variants/FL-23-min-720.avif",
+        "960": "/images/variants/FL-23-min-960.avif",
+        "1280": "/images/variants/FL-23-min-1280.avif",
+        "1600": "/images/variants/FL-23-min-1600.avif",
+        "1920": "/images/variants/FL-23-min-1920.avif"
+      }
+    },
+    "images/content/FL-3-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-3-min-240.webp",
+        "320": "/images/variants/FL-3-min-320.webp",
+        "360": "/images/variants/FL-3-min-360.webp",
+        "480": "/images/variants/FL-3-min-480.webp",
+        "640": "/images/variants/FL-3-min-640.webp",
+        "720": "/images/variants/FL-3-min-720.webp",
+        "960": "/images/variants/FL-3-min-960.webp",
+        "1280": "/images/variants/FL-3-min-1280.webp",
+        "1600": "/images/variants/FL-3-min-1600.webp",
+        "1920": "/images/variants/FL-3-min-1920.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-3-min-240.avif",
+        "320": "/images/variants/FL-3-min-320.avif",
+        "360": "/images/variants/FL-3-min-360.avif",
+        "480": "/images/variants/FL-3-min-480.avif",
+        "640": "/images/variants/FL-3-min-640.avif",
+        "720": "/images/variants/FL-3-min-720.avif",
+        "960": "/images/variants/FL-3-min-960.avif",
+        "1280": "/images/variants/FL-3-min-1280.avif",
+        "1600": "/images/variants/FL-3-min-1600.avif",
+        "1920": "/images/variants/FL-3-min-1920.avif"
+      }
+    },
+    "images/content/FL-45-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-45-min-240.webp",
+        "320": "/images/variants/FL-45-min-320.webp",
+        "360": "/images/variants/FL-45-min-360.webp",
+        "480": "/images/variants/FL-45-min-480.webp",
+        "640": "/images/variants/FL-45-min-640.webp",
+        "720": "/images/variants/FL-45-min-720.webp",
+        "960": "/images/variants/FL-45-min-960.webp",
+        "1280": "/images/variants/FL-45-min-1280.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-45-min-240.avif",
+        "320": "/images/variants/FL-45-min-320.avif",
+        "360": "/images/variants/FL-45-min-360.avif",
+        "480": "/images/variants/FL-45-min-480.avif",
+        "640": "/images/variants/FL-45-min-640.avif",
+        "720": "/images/variants/FL-45-min-720.avif",
+        "960": "/images/variants/FL-45-min-960.avif",
+        "1280": "/images/variants/FL-45-min-1280.avif"
+      }
+    },
+    "images/content/FL-47-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-47-min-240.webp",
+        "320": "/images/variants/FL-47-min-320.webp",
+        "360": "/images/variants/FL-47-min-360.webp",
+        "480": "/images/variants/FL-47-min-480.webp",
+        "640": "/images/variants/FL-47-min-640.webp",
+        "720": "/images/variants/FL-47-min-720.webp",
+        "960": "/images/variants/FL-47-min-960.webp",
+        "1280": "/images/variants/FL-47-min-1280.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-47-min-240.avif",
+        "320": "/images/variants/FL-47-min-320.avif",
+        "360": "/images/variants/FL-47-min-360.avif",
+        "480": "/images/variants/FL-47-min-480.avif",
+        "640": "/images/variants/FL-47-min-640.avif",
+        "720": "/images/variants/FL-47-min-720.avif",
+        "960": "/images/variants/FL-47-min-960.avif",
+        "1280": "/images/variants/FL-47-min-1280.avif"
+      }
+    },
+    "images/content/FL-7-min.jpg": {
+      "webp": {
+        "240": "/images/variants/FL-7-min-240.webp",
+        "320": "/images/variants/FL-7-min-320.webp",
+        "360": "/images/variants/FL-7-min-360.webp",
+        "480": "/images/variants/FL-7-min-480.webp",
+        "640": "/images/variants/FL-7-min-640.webp",
+        "720": "/images/variants/FL-7-min-720.webp",
+        "960": "/images/variants/FL-7-min-960.webp",
+        "1280": "/images/variants/FL-7-min-1280.webp"
+      },
+      "avif": {
+        "240": "/images/variants/FL-7-min-240.avif",
+        "320": "/images/variants/FL-7-min-320.avif",
+        "360": "/images/variants/FL-7-min-360.avif",
+        "480": "/images/variants/FL-7-min-480.avif",
+        "640": "/images/variants/FL-7-min-640.avif",
+        "720": "/images/variants/FL-7-min-720.avif",
+        "960": "/images/variants/FL-7-min-960.avif",
+        "1280": "/images/variants/FL-7-min-1280.avif"
       }
     },
     "images/content/IMG_0005-510x765.jpeg": {
@@ -4424,22 +4504,6 @@
         "480": "/images/variants/IMG_4767-p-500-480.avif"
       }
     },
-    "images/content/IMG_4767.jpg": {
-      "webp": {
-        "240": "/images/variants/IMG_4767-240.webp",
-        "320": "/images/variants/IMG_4767-320.webp",
-        "360": "/images/variants/IMG_4767-360.webp",
-        "480": "/images/variants/IMG_4767-480.webp",
-        "640": "/images/variants/IMG_4767-640.webp"
-      },
-      "avif": {
-        "240": "/images/variants/IMG_4767-240.avif",
-        "320": "/images/variants/IMG_4767-320.avif",
-        "360": "/images/variants/IMG_4767-360.avif",
-        "480": "/images/variants/IMG_4767-480.avif",
-        "640": "/images/variants/IMG_4767-640.avif"
-      }
-    },
     "images/content/IMG_4854-min-p-500.jpg": {
       "webp": {
         "240": "/images/variants/IMG_4854-min-p-500-240.webp",
@@ -5084,6 +5148,20 @@
         "960": "/images/variants/_SZL9705-copy-32-min-960.avif"
       }
     },
+    "images/content/android-chrome-512x512.png": {
+      "webp": {
+        "240": "/images/variants/android-chrome-512x512-240.webp",
+        "320": "/images/variants/android-chrome-512x512-320.webp",
+        "360": "/images/variants/android-chrome-512x512-360.webp",
+        "480": "/images/variants/android-chrome-512x512-480.webp"
+      },
+      "avif": {
+        "240": "/images/variants/android-chrome-512x512-240.avif",
+        "320": "/images/variants/android-chrome-512x512-320.avif",
+        "360": "/images/variants/android-chrome-512x512-360.avif",
+        "480": "/images/variants/android-chrome-512x512-480.avif"
+      }
+    },
     "images/content/image0-510x287-p-500.jpeg": {
       "webp": {
         "240": "/images/variants/image0-510x287-p-500-240.webp",
@@ -5152,32 +5230,6 @@
         "320": "/images/variants/sima-3-4D.--min-p-500-320.avif",
         "360": "/images/variants/sima-3-4D.--min-p-500-360.avif",
         "480": "/images/variants/sima-3-4D.--min-p-500-480.avif"
-      }
-    },
-    "images/content/sima-3-4D.--min.jpg": {
-      "webp": {
-        "240": "/images/variants/sima-3-4D.--min-240.webp",
-        "320": "/images/variants/sima-3-4D.--min-320.webp",
-        "360": "/images/variants/sima-3-4D.--min-360.webp",
-        "480": "/images/variants/sima-3-4D.--min-480.webp",
-        "640": "/images/variants/sima-3-4D.--min-640.webp",
-        "720": "/images/variants/sima-3-4D.--min-720.webp"
-      },
-      "avif": {
-        "240": "/images/variants/sima-3-4D.--min-240.avif",
-        "320": "/images/variants/sima-3-4D.--min-320.avif",
-        "360": "/images/variants/sima-3-4D.--min-360.avif",
-        "480": "/images/variants/sima-3-4D.--min-480.avif",
-        "640": "/images/variants/sima-3-4D.--min-640.avif",
-        "720": "/images/variants/sima-3-4D.--min-720.avif"
-      }
-    },
-    "images/content/webclip.jpg": {
-      "webp": {
-        "240": "/images/variants/webclip-240.webp"
-      },
-      "avif": {
-        "240": "/images/variants/webclip-240.avif"
       }
     }
   }

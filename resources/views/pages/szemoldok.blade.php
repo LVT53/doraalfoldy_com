@@ -8,7 +8,7 @@
         category="Az arcod kerete"
         text="A szemöldök az egyik legfontosabb része az arcnak. Egy szép, jó ívű, színű és formájú szemöldök nagyban hozzájárul az arc kifejezőképességéhez."
         secondaryText="A szemöldök szálak növekedése, hossza, valamint az, hogy hova esik a szemöldökcsonton szintén befolyásoló tényező. Mindenkinek egyénre szabottan készítem el a számára előnyös ívű, formájú, színű szemöldököt úgy, hogy természetes hatású legyen."
-        image="/images/content/B27A8D3E-DA84-4DE1-8309-EDFD27E61AC0-510x510.jpeg"
+        image="/images/content/FL-3-min.jpg"
         imageAlt="Szemöldök munka"
         width="w-[75%]"
     />
@@ -29,7 +29,7 @@
             'Érdemes az olajos krémeket szemöldök festés után is kerülni 1 napig.',
             'Nem szabad dörzsölni a szemöldöködet kezelés után mert gyengítheti a festés hatását.'
         ]"
-        image="/images/content/4C57FC68-7D51-44F6-9CD6-51F1C9D78240-2-scaled-2048x2048-min.jpg"
+        image="/images/content/FL-1-min.jpg"
         width="w-[75%]"
     />
 
@@ -40,6 +40,7 @@
             title="Szemöldök formázás és szemöldök festés"
             text="A szemöldök festés olyanoknak ajánlom, akik tartós és esztétikus szemöldökre vágynak. Ez a kezelés egy szemöldök szedésből, formázásból és szemöldök festésből áll. A festék bőrön bőrtípustól függően 3-5 napig tartós, a szemöldök szálakon pedig akár 3-4 hétig is."
             image="/images/content/image1-510x765.jpeg"
+            imagePosition="object-[50%_84%]"
             :features="['tartós megoldást keresel szemöldököd festésére', 'nem szeretnél kitetováltatni a szemöldöködet', 'rendezett és esztétikus szemöldökre vágysz', 'időt szeretnél spórolni a mindennapokban']"
             priceDetails="<strong>Időtartam:</strong> 30 – 50 perc
             <strong>Ára:</strong>

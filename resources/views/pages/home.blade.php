@@ -76,7 +76,7 @@
     @endphp
 
     <x-sections.hero
-        title="Makeup <span class='text-brand-gold'>artist.</span>"
+        title="Makeup and lash <span class='text-brand-gold'>stylist.</span>"
         text="Alföldy Dóra vagyok, sminkes-, szempilla és szemöldök stylist. Turizmus szakirányon végeztem a Budapesti Gazdasági Egyetemen, ahol az utolsó évben jött egy lehetőség, hogy egy sminkes-szempilla stylist mellett tanulhatok és dolgozhatok. Ez után pedig elvégeztem a szépségtanácsadó okj-t, illetve több továbbképzésen is részt vettem. Szeretek a trendekkel haladni és képezni magam."
         secondaryTitle="Szolgáltatásaim"
         secondaryText="Sokrétű szolgáltatásaim között megtalálható az alkalmi smink, menyasszonyi smink, valamint a smink tanácsadás. Emellet szempilla építéssel (1 - 3-4D-ig) és szempilla liftinggel is foglalkozom, de a vadi új ProMade technológiájú pillák is megtalálhatók nálam. Ezeken felül pedig szemöldök szedésre, festésre és laminálásra is van lehetőség."

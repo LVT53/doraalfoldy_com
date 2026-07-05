@@ -7,9 +7,10 @@
         title="Szempilla <span class='text-brand-gold'>Styling</span>"
         category="Rád szabva"
         text="A szempilla hosszabbítással szép és látványos hatást lehet elérni, amely kiemeli a tekinteted. Ez egy olyan technika, amivel nem csak dúsabb, hanem hosszabb szempillákat varázsolhatunk Neked."
-        image="/images/content/DSC_7810-scaled-min.jpg"
+        image="/images/content/FL-23-min.jpg"
         imageAlt="Szempilla munka"
         width="w-[75%]"
+        overlayVia="12%"
     />
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
@@ -19,7 +20,7 @@
         text="A műszempilla szettek személyre szabottan készülnek. Hosszát szempilláid hossza adja, ívét pedig a szemed és arcod formája, dússágát pedig úgy alakítjuk ahogy Neked a legjobb, legkényelmesebb. A szempillahosszabbítás során a saját szempillákra egyenként applikálunk műpillákat. A saját pilláid több méretből tevődnek össze, így a tökéletes forma elérése érdekében az applikált műpillák is.
 
         Kényelmed és komfortérzeted ugyanolyan fontos, mint az, hogy szempillád és sminked csodaszép legyen. Kényelmes kozmetikai ágyon pihenhetsz miközben szépülsz. A tökéletes és tartós végeredményt a szakmai tapasztalat mellett a minőségi eszközök és termékek garantálják."
-        image="/images/content/sima-3-4D.--min.jpg"
+        image="/images/content/FL-47-min.jpg"
         width="w-[75%]"
     />
 
@@ -90,7 +91,7 @@
         ]"
         priceDetails="<strong>Időtartam:</strong> 1 óra
         <strong>Ára:</strong> 12 000 Ft"
-        image="/images/content/IMG_4767.jpg"
+        image="/images/content/FL-7-min.jpg"
         reverse="true"
         width="w-[75%]"
     />
@@ -130,7 +131,7 @@
         text="Ha valaki elsőre találkozik a műszempillával jogosan merülhet fel benne a kérdés, hogy mi az a töltés és miért van rá szükség. A természetes szempillák folyamatosan cserélődnek ez által a saját szempillával együtt kihullhatnak a műpillák, ami elsőre ijesztő lehet, de ez egy teljesen természetes folyamat. Minden szempilla más-más ütemben nő le. Egy ember szempilla állománya kb 90-120 nap alatt cserélődik ki. Egy hét alatt 3-5 szál saját szempilla hullik ki. Ez által ki lehet számolni, hogy a teljes állomány kb 50-70%-a 3 hét alatt kihullik. A lenőtt pillákat eltávolítjuk, a kihullott pillák helyére pedig újak nőnek ezekre pedig új műpillák kerülnek fel. Ezért van szükség töltésre.
 
         Amennyiben jelenleg nincs fent műszempillád akkor új szettre tudsz bejelentkezni majd a későbbiekben (2, 3 vagy 4 hétre) töltésre. Más által készített műszempillát nem áll módomban tölteni, ilyenkor az leoldásra kerül és új szett kerül felhelyezésre. Erre azért van szükség mert rengetegen dolgozunk ebben a szakmában és mindenki más-más termékkel dolgozik, ezért így tudok egységes és szép munkát kiadni a kezemből."
-        image="/images/content/DSC_7854-min.jpg"
+        image="/images/content/FL-45-min.jpg"
         width="w-[75%]"
     />
 @endsection

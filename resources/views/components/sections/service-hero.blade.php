@@ -7,7 +7,15 @@
     'category' => 'Szolgáltatás',
     'width' => 'w-[87%]',
     'sizes' => '(max-width: 1024px) 100vw, 70vw',
+    'overlayVia' => '30%',
 ])
+
+@php
+    $overlayViaClass = match ($overlayVia) {
+        '12%' => 'via-12%',
+        default => 'via-30%',
+    };
+@endphp
 
 <section class="w-[93%] md:{{ $width }} mx-auto lg:my-12">
     <div class="relative lg:min-h-[65vh] flex flex-col lg:flex-row items-stretch lg:items-center mb-12 lg:mb-20">
@@ -21,7 +29,7 @@
                     :sizes="$sizes"
                 />
             @endif
-            <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent via-30% to-transparent hidden lg:block"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-beige-header via-transparent {{ $overlayViaClass }} to-transparent hidden lg:block"></div>
             <div class="absolute inset-0 lg:bg-brand-beige-header/20 lg:hidden backdrop-blur-[0.5px]"></div>
         </div>
 
