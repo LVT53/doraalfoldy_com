@@ -6,7 +6,7 @@
     'imageAlt' => '',
     'category' => 'Szolgáltatás',
     'width' => 'w-[87%]',
-    'sizes' => '(max-width: 1280px) 100vw, 70vw',
+    'sizes' => '(max-width: 767px) 525px, (max-width: 1279px) 675px, 70vw',
     'overlayVia' => '30%',
     'wideImage' => false,
 ])
@@ -16,6 +16,19 @@
         '12%' => 'via-12%',
         default => 'via-30%',
     };
+    // Below `xl` the image box is `100vw` wide but a FIXED height (350px,
+    // then 450px from `md`), so on phones its aspect ratio (~1.07-1.7:1)
+    // ends up narrower than the source photos' fixed 3:2 (1.5:1) landscape
+    // crop. That flips object-cover into height-constrained scaling: the
+    // box needs a source at least `height * 1.5` px wide to cover it
+    // without upscaling, which is MORE than the box's own CSS width once
+    // height exceeds width / 1.5 (true for every real phone at these fixed
+    // heights). `100vw`-based srcset selection only reasons about width, so
+    // it was picking sources 30-40% short of what's actually needed and
+    // the browser silently upscaled them - the "pixelation" on mobile.
+    // Reporting the height-derived width instead (350*1.5=525,
+    // 450*1.5=675) makes the browser request enough source resolution to
+    // cover the box's real, height-bound scale.
     // The hero box's width is capped by the page's max-w-[1700px] container,
     // but its height used to keep growing with 65vh. On tall desktop viewports
     // (1440p, 4K) that made the box far narrower than the photo's 3:2 aspect
