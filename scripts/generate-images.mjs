@@ -13,8 +13,8 @@ const manifestPath = path.join(variantsDir, 'manifest.json');
 const widths = [240, 320, 360, 480, 640, 720, 960, 1280, 1600, 1920];
 const supportedExts = new Set(['.jpg', '.jpeg', '.png', '.webp']);
 const force = process.argv.includes('--force');
-const webpQuality = 70;
-const avifQuality = 50;
+const webpQuality = 78;
+const avifQuality = 62;
 
 let sharp;
 try {

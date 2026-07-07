@@ -39,7 +39,7 @@
             'Rugalmas időpontegyeztetés – akár hétvégén is!',
             'Megismerkedhetsz új, professzionális smink termékekkel és eszközökkel'
         ]"
-        image="/images/content/IMG_0009-510x765.jpg"
+        image="/images/content/DA0168-min.jpg"
         reverse="true"
         width="w-[75%]"
     />
@@ -59,7 +59,7 @@
 
         <strong>Átfogó, jól érthető tananyag</strong>
         A közösen eltöltött idő alatt minden kérdésedre választ kapsz annak érdekében, hogy a tanultak megragadjanak és azt a jövőben használni tudd a mindennapokban."
-        image="/images/content/IMG_0020-510x765.jpg"
+        image="/images/content/DA0273-min.jpg"
         width="w-[75%]"
     />
 

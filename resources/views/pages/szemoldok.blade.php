@@ -40,14 +40,13 @@
         <x-sections.pricing-card
             title="Szemöldök formázás és szemöldök festés"
             text="A szemöldök festés olyanoknak ajánlom, akik tartós és esztétikus szemöldökre vágynak. Ez a kezelés egy szemöldök szedésből, formázásból és szemöldök festésből áll. A festék bőrön bőrtípustól függően 3-5 napig tartós, a szemöldök szálakon pedig akár 3-4 hétig is."
-            image="/images/content/image1-510x765.jpeg"
+            image="/images/content/DA009-min.jpg"
             imagePosition="object-[50%_84%]"
             :features="['tartós megoldást keresel szemöldököd festésére', 'nem szeretnél kitetováltatni a szemöldöködet', 'rendezett és esztétikus szemöldökre vágysz', 'időt szeretnél spórolni a mindennapokban']"
             priceDetails="<strong>Időtartam:</strong> 30 – 50 perc
             <strong>Ára:</strong>
-            Szemöldök szedés és festés: 6 500 Ft
-            Szemöldök szedés: 3 500 Ft
-            Szemöldök festés: 4 000 Ft"
+            Szemöldök szedés és festés: 8 500 Ft
+            Szemöldök szedés: 5 500 Ft"
         />
 
         <x-sections.pricing-card
@@ -57,9 +56,9 @@
             :features="['vastagabb dúsabb szemöldökre vágysz', 'optikailag dúsabb, szabályosabb szemöldököt szeretnél', 'rendezettebb szemöldökre vágysz', 'nem vagy elégedett a szemöldököd formájával', 'időt szeretnél spórolni a mindennapokban']"
             priceDetails="<strong>Időtartam:</strong> 45 perc – 1 óra
             <strong>Ára:</strong>
-            Szemöldök laminálás: 7 500 Ft
-            Szemöldök laminálás és szemöldök szedés: 8 500 Ft
-            Szemöldök laminálás szemöldök szedéssel és festéssel: 9 500 Ft"
+            Szemöldök laminálás: 9 500 Ft
+            Szemöldök laminálás és szemöldök szedés: 10 500 Ft
+            Szemöldök laminálás szemöldök szedéssel és festéssel: 11 500 Ft"
         />
     </section>
 
@@ -68,7 +67,7 @@
     <x-sections.content-card
         title="Utókezelés"
         text="A szemöldök festés után fontos, hogy amennyiben lehetséges ne érje víz, gőz, hő 24 óráig a szemöldököt. A tartósság érdekében az egyik legfontosabb, hogy ne dörzsöld a szemöldököd mert annak hatására a festék megkophat. Sminklemosó nyugodtan érheti, de ügyelni kell ott is a finom mozdulatokra."
-        image="/images/content/DSC_4461-min.jpg"
+        image="/images/content/DA007-min.jpg"
         width="w-[75%]"
     />
 

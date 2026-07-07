@@ -35,22 +35,25 @@
             featuresTitle="Miben más a ProMade szempilla?"
             :features="['rövidebb időt vesz igénybe az építés', 'kisebb az esély a fan-ok összecsukódására', 'könnyebbek, tartósabbak']"
             priceDetails="<strong>Időtartam:</strong> Új szett 1.5 – 2 óra, töltés 1 – 1.5 óra
-            <strong>Ára:</strong> Új szett 22 000 Ft
-            <strong>Töltés:</strong> 0-14. napig 16 000 Ft, 15-21. napig 16 500 Ft, 22-28. napig 17 000 Ft
+            <strong>Ára:</strong> Új szett 23 500 Ft
+            <strong>Töltés:</strong> 0-14. napig 17 500 Ft, 15-21. napig 18 000 Ft, 22-28. napig 18 500 Ft
 
             29.naptól új szett készül."
         />
 
         <x-sections.pricing-card
-            title="3-4D Volume"
-            text="A 3-4D szettnél szintén a természetességre törekszünk a dúsabb, látványosabb hatás mellett. A 3-4D azt jelenti, hogy 1 saját szempillára 3/4 db műszempilla kerül fel. A műszempillák könnyed viseletként szolgálnak és nem nehezítik el a saját szempilla állományt. Munkám során előnyben részesítem a professzionális anyagokat és termékeket."
-            image="/images/content/BAC1A83C-2B44-435E-8CA9-BEFB85DFFC65-2-min.jpg"
-            :features="['hosszabb szempillákat szeretnél', 'dúsabb tekintetre vágysz', 'nem szeretnél többet a szempillaspirállal bíbelődni', 'időt szeretnél spórolni', 'természetes, mégis látványos eredmény']"
-            priceDetails="<strong>Időtartam:</strong> Új szett 3 óra, töltés 2 – 2.5 óra
-            <strong>Ára:</strong> Új szett 21 000 Ft
-            <strong>Töltés:</strong> 0-14. napig 15 000 Ft, 15-21. napig 15 500 Ft, 22-28. napig 16 000 Ft
-
-            29.naptól új szett készül."
+            title="Szempilla lifting"
+            text="A szempilla lifting - vagy más néven szempilla dauer - egy olyan göndörítő kezelés, ami által a saját szempilláid íveltebbek lesznek, ez által hosszabbnak, a szemed pedig nagyobbnak fog tűnni. A lifting alatt a szempillákat be is festem tartós fekete festékkel. Kb. 4 – 6 hétig tartós."
+            image="/images/content/FL-7-min.jpg"
+            :features="[
+                'allergiás vagy a műszempilla ragasztóra',
+                'alternatívát keresel',
+                'spirálozott hatást szeretnél elérni',
+                'időt szeretnél spórolni',
+                'hosszabb, feketébb szempillákat szeretnél'
+            ]"
+            priceDetails="<strong>Időtartam:</strong> 1 óra
+            <strong>Ára:</strong> 12 500 Ft"
         />
 
         <x-sections.pricing-card
@@ -59,8 +62,8 @@
             image="/images/content/IMG_7912-min.jpeg"
             :features="['időt szeretnél spórolni', 'természetes, enyhén látványos eredmény', 'hosszabb szempillákat szeretnél', 'enyhén dús szempillákat szeretnél']"
             priceDetails="<strong>Időtartam:</strong> Új szett 2 óra, töltés 1.5 – 2 óra
-            <strong>Ára:</strong> Új szett 20 000 Ft
-            <strong>Töltés:</strong> 0-14. napig 14 000 Ft, 15-21. napig 14 500 Ft, 22-28. napig 15 000 Ft
+            <strong>Ára:</strong> Új szett 21 500 Ft
+            <strong>Töltés:</strong> 0-14. napig 15 500 Ft, 15-21. napig 16 000 Ft, 22-28. napig 16 500 Ft
 
             29.naptól új szett készül."
         />
@@ -71,31 +74,12 @@
             image="/images/content/IMG_0771-min.jpg"
             :features="['természetes hatást szeretnél elérni', 'nem szeretnél többet a szempillaspirállal bíbelődni', 'időt szeretnél spórolni']"
             priceDetails="<strong>Időtartam:</strong> Új szett 2 óra, töltés 1-1.5 óra
-            <strong>Ára:</strong> Új szett 19 000 Ft
-            <strong>Töltés:</strong> 0-14. napig 13 000 Ft, 15-21. napig 13 500 Ft, 22-28. napig 14 000 Ft
+            <strong>Ára:</strong> Új szett 20 500 Ft
+            <strong>Töltés:</strong> 0-14. napig 14 500 Ft, 15-21. napig 15 000 Ft, 22-28. napig 15 500 Ft
 
             29.naptól új szett készül."
         />
     </section>
-
-    <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
-
-    <x-sections.content-card
-        title="Szempilla lifting"
-        text="A szempilla lifting - vagy más néven szempilla dauer - egy olyan göndörítő kezelés, ami által a saját szempilláid íveltebbek lesznek, ez által hosszabbnak, a szemed pedig nagyobbnak fog tűnni. A lifting alatt a szempillákat be is festem tartós fekete festékkel. Kb. 4 – 6 hétig tartós."
-        :features="[
-            'allergiás vagy a műszempilla ragasztóra',
-            'alternatívát keresel',
-            'spirálozott hatást szeretnél elérni',
-            'időt szeretnél spórolni',
-            'hosszabb, feketébb szempillákat szeretnél'
-        ]"
-        priceDetails="<strong>Időtartam:</strong> 1 óra
-        <strong>Ára:</strong> 12 000 Ft"
-        image="/images/content/FL-7-min.jpg"
-        reverse="true"
-        width="w-[75%]"
-    />
 
     <div class="w-[93%] md:w-[75%] mx-auto my-12"><div class="divider"></div></div>
 

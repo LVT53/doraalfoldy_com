@@ -92,7 +92,7 @@
 
     <x-sections.about-split
         text="Számomra fontos a kényelmed, hogy jól érezed magad nálam, és hogy a hozzád legjobban illő sminket, szempillát és/vagy szemöldököt készítsük el. Az évek során lehetőségem nyílt többetek arcára mosolyt csalni a munkámmal. Törekszem a természetességre, de a kihívással teli látványosabb, extrább sminkeket is ugyan olyan lelkesedéssel készítem el."
-        image="/images/content/Alfoldy_Dori-300dpi-1200px-RGB-790x1192-min.jpg"
+        image="/images/content/Alfoldy_Dori-2026-min.jpg"
         imageAlt="Alföldy Dóra"
         :buttons="$aboutButtons"
     />

@@ -138,7 +138,7 @@ class ImageVariants
             imagecopyresampled($canvas, $image, 0, 0, 0, 0, $targetWidth, $newHeight, $width, $height);
 
             if ($canWebp && ! file_exists($targetPathWebp)) {
-                $written = imagewebp($canvas, $targetPathWebp, 70);
+                $written = imagewebp($canvas, $targetPathWebp, 78);
                 if (! $written) {
                     Log::warning('Image variants failed: WebP write failed.', [
                         'path' => $clean,
@@ -150,7 +150,7 @@ class ImageVariants
             if ($canAvif && ! file_exists($targetPathAvif)) {
                 $written = false;
                 if ($canAvifGd) {
-                    $written = imageavif($canvas, $targetPathAvif, 50);
+                    $written = imageavif($canvas, $targetPathAvif, 62);
                 } elseif ($canAvifImagick) {
                     $written = self::writeAvifWithImagick($sourcePath, $targetPathAvif, $targetWidth, $newHeight);
                 }
@@ -219,7 +219,7 @@ class ImageVariants
         try {
             $imagick = new \Imagick($sourcePath);
             $imagick->setImageFormat('avif');
-            $imagick->setImageCompressionQuality(50);
+            $imagick->setImageCompressionQuality(62);
             $imagick->resizeImage($targetWidth, $targetHeight, \Imagick::FILTER_LANCZOS, 1);
             $written = $imagick->writeImage($targetPath);
             $imagick->clear();

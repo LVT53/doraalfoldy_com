@@ -20,7 +20,7 @@
         text="Életünket számtalan kisebb-nagyobb esemény kíséri végig. Lehet az egy baráti összejövetel, születésnap, esküvő, szalagavató vagy akár egy fotózás. Olyan fontos pillanatok, melyeken szeretünk szépek, csinosak és elegánsak lenni. Ha már van elképzelésed, akkor profi segítséget nyújtok hozzá. Ha pedig teljesen rám bízod magad, akkor is biztos lehetsz abban, hogy elégedetten és mosollyal az arcodon távozol tőlem."
         priceDetails="<strong>Időtartam:</strong> 1 óra
         <strong>Ára:</strong> 15 000 Ft"
-        image="/images/content/C9AF1BEC-B436-40CF-B5F1-45CA0D255AD3-min.jpg"
+        image="/images/content/DA012-min.jpg"
         buttonHref="https://doraalfoldy.salonic.hu/"
         width="w-[75%]"
     />
@@ -43,7 +43,7 @@
         Az esküvő napján a hozzátartozók, koszorúslányok sminkjét is szívesen elkészítem. Ennek ára 15 000 Ft/koszorúslány, hozzátartozó; 12 000 Ft/örömanya.
 
         Érdeklődni az <a href='mailto:info@doraalfoldy.com' class='text-brand-gold font-bold hover:underline'>info@doraalfoldy.com</a> címen tudsz dátum és helyszín megjelöléssel, valamint a sminkelendő személyek számával. Ezzel is gyorsítva az árajánlat adást."
-        image="/images/content/DSC_4522-790x1183-min.jpg"
+        image="/images/content/DA005-min.jpg"
         reverse="true"
         width="w-[75%]"
     />
@@ -57,7 +57,7 @@
         <strong>Ára:</strong> 18 000 Ft (készenléti díj 5000 Ft/megkezdett óra)
 
         A kiszállási díj a helyszíntől függ ezért kérlek érdeklődj emailben."
-        image="/images/content/DSC_44381-510x764.jpg"
+        image="/images/content/DA004-min.jpg"
         buttonHref="https://doraalfoldy.salonic.hu/"
         width="w-[75%]"
     />
