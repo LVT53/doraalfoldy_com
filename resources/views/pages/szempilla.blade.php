@@ -45,6 +45,7 @@
             title="Szempilla lifting"
             text="A szempilla lifting - vagy más néven szempilla dauer - egy olyan göndörítő kezelés, ami által a saját szempilláid íveltebbek lesznek, ez által hosszabbnak, a szemed pedig nagyobbnak fog tűnni. A lifting alatt a szempillákat be is festem tartós fekete festékkel. Kb. 4 – 6 hétig tartós."
             image="/images/content/FL-7-min.jpg"
+            imagePosition="object-[50%_20%]"
             :features="[
                 'allergiás vagy a műszempilla ragasztóra',
                 'alternatívát keresel',
