@@ -8,7 +8,7 @@
         <div class="masonry-column-item hidden md:block w-full md:w-1/2 lg:w-1/4 px-3 pointer-events-none opacity-0 h-0"></div>
 
         @foreach($items as $item)
-            <div class="masonry-column-item w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+            <div class="masonry-column-item w-full md:w-1/2 lg:w-1/4 px-3 mb-6 {{ $item['class'] ?? '' }}">
                 <div class="{{ $item['type'] === 'text' ? ($item['color'] ?? 'bg-brand-beige-header/45') : '' }} rounded-[15px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 {{ $item['type'] === 'text' ? 'p-8 md:p-10' : '' }} border border-brand-gold/5">
                     @if($item['type'] === 'text')
                         @if(isset($item['href']))

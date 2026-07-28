@@ -12,9 +12,11 @@
                 'href' => route('smink')
             ],
             [
+                // Shown in the mobile hero instead, so it isn't repeated here on phones.
                 'type' => 'image',
-                'src' => '/images/content/_SZL9234-copy-min.jpg',
-                'alt' => 'Szempilla építés'
+                'src' => '/images/content/DSC_52491-min.jpg',
+                'alt' => 'Smink munka',
+                'class' => 'hidden md:block'
             ],
             [
                 'type' => 'text',
@@ -22,6 +24,11 @@
                 'text' => 'A szempilla építéssel szép és látványos hatást lehet elérni, amely kiemeli a tekintetet. Ez egy olyan technika, amivel dúsítani és hosszabbítani tudunk.',
                 'href' => route('szempilla'),
                 'color' => 'bg-brand-beige-header/45'
+            ],
+            [
+                'type' => 'image',
+                'src' => '/images/content/_SZL9234-copy-min.jpg',
+                'alt' => 'Szempilla építés'
             ],
             [
                 'type' => 'image',
