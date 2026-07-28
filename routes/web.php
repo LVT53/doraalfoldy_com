@@ -45,3 +45,22 @@ Route::get('/gdpr', function () {
 Route::get('/aszf', function () {
     return view('pages.aszf');
 })->name('aszf');
+
+// The Webflow site this replaced used .html URLs. Keep links already out in the
+// world - search results, the Salonic profile, printed cards - pointing here.
+Route::permanentRedirect('/index.html', '/');
+
+foreach ([
+    'szempilla',
+    'smink',
+    'szemoldok',
+    'smink-tanacsadas',
+    'galeria',
+    'szempilla-galeria',
+    'smink-galleria',
+    'szemoldok-galleria',
+    'gdpr',
+    'aszf',
+] as $legacyPage) {
+    Route::permanentRedirect("/{$legacyPage}.html", "/{$legacyPage}");
+}
