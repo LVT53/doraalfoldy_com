@@ -19,7 +19,7 @@
         title="Smink tanácsadás"
         text="A mindennapi rohanás és a sok teendő mellett néha lassíts, és lélegezz fel egy kicsit. Kapcsolj ki, lazíts és törődj magaddal. Ebben szeretnék Neked segíteni. Egy olyan smink tanácsadást álmodtam meg, ahol egyszerre tudsz kikapcsolni és tanulni. Az alapoktól kezdve elsajátíthatod a számodra legtökéletesebb nappali smink csínját-bínját. Lesd el tőlem a profi trükköket, hozd ki magadból a legjobbat!"
         priceDetails="<strong>Időtartam:</strong> 2 – 3 óra
-        <strong>Ára:</strong> 30 000 Ft"
+        <strong>Ára:</strong> 32 000 Ft"
         image="/images/content/IMG_0005-510x765.jpeg"
         buttonHref="https://doraalfoldy.salonic.hu/"
         width="w-[75%]"
